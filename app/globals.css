@@ -56,12 +56,12 @@ h2 span {
 
 h2 span:nth-of-type(3),
 h2 span:nth-of-type(4) {
-  -webkit-text-stroke: 1.5px #000;
+  -webkit-text-stroke: 1px #000;
   color: transparent;
 }
 
 h3 {
-  font-size: clamp(2.2rem, 2.5vw, 3rem);
+  font-size: clamp(2.8rem, 2.5vw, 3.6rem);
 }
 
 p {
