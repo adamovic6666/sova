@@ -1,0 +1,10 @@
+.WhoWeAre {
+  background-color: var(--color-bg-dark);
+  padding-block: 4rem;
+}
+
+@media (min-width: 768px) {
+  .WhoWeAre {
+    padding-block: 8rem;
+  }
+}

@@ -1,0 +1,9 @@
+.Wave {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  display: flex;
+}
