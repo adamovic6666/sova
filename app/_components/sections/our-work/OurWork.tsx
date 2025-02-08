@@ -1,15 +1,14 @@
-"use client";
 import React from "react";
-import Title from "../title/Title";
-import { OurWorkData } from "../../_data";
+import Title from "../../title/Title";
+import { OurWorkData } from "../../../_data";
 import Image from "next/image";
 import styles from "./OurWork.module.css";
-import Button from "../button/Button";
-import Wave from "../wave/Wave";
+import Button from "../../ui/button/Button";
+import Wave from "../../wave/Wave";
 
 const OurWork = () => {
   return (
-    <section className={`${styles.OurWork} `}>
+    <section className={styles.OurWork}>
       <Wave bgColor="#f0f0f0" />
       <Title tag="h2">
         <span>Our</span>
@@ -30,7 +29,9 @@ const OurWork = () => {
           );
         })}
       </div>
-      <Button onClick={() => {}}>View all projects</Button>
+      <Button href="/projects" type="link">
+        View all projects
+      </Button>
     </section>
   );
 };

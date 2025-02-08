@@ -1,9 +1,13 @@
 :root {
   --color-grey: #d4d4d4;
+  --color-bg-white: #fff;
   --color-bg-dark: #131313;
   --color-bg-light: #f0f0f0;
   --text-primary: #444;
   --button-border-color: #131313;
+  --color-error: #ff0000;
+  --label-color: #111;
+  --accent-color: #e97a31;
 }
 
 * {
@@ -29,12 +33,20 @@ h6,
 p {
   margin: 0;
   padding: 0;
+  font-family: var(--font-open-sans);
 }
 
 .container {
   max-width: 124rem;
   margin: 0 auto;
   padding: 0 1.6rem;
+  position: relative;
+}
+
+p {
+  font-family: var(--font-georgia-pro);
+  color: var(--text-primary);
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
 }
 
 h2 {
@@ -49,14 +61,13 @@ h2 {
 
 h2 span {
   text-transform: uppercase;
-  font-family: var(--font-open-sans);
   font-weight: 800;
   letter-spacing: 1rem;
 }
 
 h2 span:nth-of-type(3),
 h2 span:nth-of-type(4) {
-  -webkit-text-stroke: 1px #000;
+  -webkit-text-stroke: 1px var(--accent-color);
   color: transparent;
 }
 
@@ -64,8 +75,13 @@ h3 {
   font-size: clamp(2.8rem, 2.5vw, 3.6rem);
 }
 
-p {
-  font-size: 1.6rem;
+h4 {
+  font-size: clamp(2.6rem, 2.5vw, 3.2rem);
+  position: relative;
+}
+
+.m-l-auto {
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {

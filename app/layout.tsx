@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./_components/header/Header";
-import Footer from "./_components/footer/Footer";
+import Header from "./_components/sections/header/Header";
+import Footer from "./_components/sections/footer/Footer";
 
 const openSans = Open_Sans({
   subsets: ["latin"],

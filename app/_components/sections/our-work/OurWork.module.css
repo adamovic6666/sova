@@ -1,6 +1,6 @@
 .OurWork {
   background-color: var(--color-bg-light);
-  padding: 6.4rem 0 4rem;
+  padding: 6.4rem 0;
   position: relative;
   border-top: 1px solid var(--color-bg-light);
   display: flex;
@@ -50,7 +50,7 @@
 
 @media (min-width: 768px) {
   .OurWork {
-    padding: 12rem 0 8rem;
+    padding: 12rem 0 16rem;
   }
 
   .OurWorkGrid {

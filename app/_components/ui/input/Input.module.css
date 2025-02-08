@@ -1,0 +1,70 @@
+.InputWrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+
+.InputWrapper textarea,
+.InputWrapper input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  outline: none;
+  border-bottom: 1px solid var(--color-grey);
+  padding: 0.8rem 0;
+  transition: all 0.3s;
+  font-family: var(--font-georgia-pro);
+}
+
+.InputWrapper textarea {
+  resize: none;
+  min-height: 9.6rem;
+}
+
+.InputWrapper textarea::placeholder,
+.InputWrapper input[value=""] label,
+.InputWrapper label {
+  font-weight: 500;
+  color: var(--label-color);
+  font-size: 1.6rem;
+  position: absolute;
+  top: -0.4rem;
+  left: 0.4rem;
+  transition: all 0.3s;
+  font-family: var(--font-georgia-pro);
+  opacity: 0.75;
+}
+
+.InputWrapper textarea:not([data-text=""]) ~ label,
+.InputWrapper input:not([value=""]) ~ label,
+.InputWrapper textarea:focus ~ label,
+.InputWrapper input:focus ~ label {
+  top: -1.2rem;
+  font-size: 1.3rem;
+  left: 0;
+  opacity: 1;
+}
+
+.InputWrapper textarea:placeholder-shown ~ label {
+  color: transparent;
+}
+
+.InputWrapper textarea:focus,
+.InputWrapper input:focus {
+  border-bottom: 1px solid var(--text-primary, #333);
+}
+
+.InputError {
+  color: var(--color-error);
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.InputWrapper:has(textarea) .InputError {
+  top: -0.4rem;
+}

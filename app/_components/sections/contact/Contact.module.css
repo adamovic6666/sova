@@ -1,0 +1,68 @@
+.Contact {
+  background-color: var(--color-bg-white);
+  padding: 6.4rem 0 4rem;
+  position: relative;
+  border-top: 1px solid var(--color-bg-white);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ContactGrid {
+  width: 100%;
+}
+
+.Contact h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: left;
+  border-bottom: 1px solid var(--color-grey);
+  padding: 6.4rem 0 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.Contact h4 + p {
+  font-weight: 600;
+}
+
+.ContactContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+  padding-top: 6.4rem;
+}
+
+.ContactContent > form,
+.ContactContent > div {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .Contact {
+    padding: 12rem 0 8rem;
+  }
+
+  .Contact h4 {
+    padding: 6.4rem 0 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .ContactContent {
+    flex-direction: row;
+    gap: 3.2rem;
+    padding-top: 8rem;
+  }
+
+  .ContactContent > form,
+  .ContactContent > div {
+    flex: unset;
+  }
+
+  .ContactContent > form {
+    width: 60%;
+  }
+
+  .ContactContent > div {
+    width: 40%;
+  }
+}

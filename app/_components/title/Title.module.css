@@ -1,0 +1,9 @@
+.contact {
+  flex-direction: column;
+  gap: 0;
+  text-align: left;
+  align-items: flex-start;
+  -webkit-text-stroke: 1px var(--accent-color);
+  color: transparent;
+  line-height: 100%;
+}

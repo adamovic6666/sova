@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./WhoWeAre.module.css";
-import Title from "../title/Title";
+import Title from "../../title/Title";
 
 const WhoWeAre = () => {
   return (
