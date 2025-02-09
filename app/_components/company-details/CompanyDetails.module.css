@@ -1,6 +1,7 @@
 .CompanyDetails {
   display: flex;
   flex-direction: column;
+  margin-top: 4rem;
 }
 
 .CompanyDetails p {
@@ -45,4 +46,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .CompanyDetails {
+    margin-top: 0;
+  }
 }
