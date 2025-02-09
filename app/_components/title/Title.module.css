@@ -3,7 +3,8 @@
   gap: 0;
   text-align: left;
   align-items: flex-start;
-  -webkit-text-stroke: 1px var(--accent-color);
+  -webkit-text-stroke: 1px #000;
   color: transparent;
   line-height: 100%;
+  letter-spacing: 0.5rem;
 }

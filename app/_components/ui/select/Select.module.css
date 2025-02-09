@@ -1,3 +1,7 @@
+.SelectWrapper {
+  position: relative;
+  width: 100%;
+}
 .Select {
   width: 100%;
   border: none;
@@ -6,11 +10,44 @@
   color: var(--text-primary);
   outline: none;
   border-bottom: 1px solid var(--color-grey);
-  padding: 0.7rem 0;
+  padding: 1.1rem 0;
   transition: all 0.3s;
   font-family: var(--font-georgia-pro);
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
   font-weight: 500;
   color: var(--label-color);
   opacity: 0.75;
+}
+
+.Select ~ label {
+  position: absolute;
+  font-weight: 500;
+  color: var(--label-color);
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0;
+  left: 0.4rem;
+  transition: all 0.3s;
+  font-family: var(--font-georgia-pro);
+  opacity: 0.75;
+}
+
+.Select:focus {
+  border-bottom: 1px solid var(--text-primary, #333);
+}
+
+.Select:not([value=""]) ~ label,
+.Select:focus ~ label {
+  top: -1.2rem;
+  font-size: 1.2rem;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.SelectWrapper .SelectError {
+  position: absolute;
+  top: -1.2rem;
+  right: 0;
+  color: var(--color-error);
+  font-size: 1.2rem;
 }

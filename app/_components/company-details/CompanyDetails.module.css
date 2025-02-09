@@ -11,7 +11,7 @@
   font-weight: 500;
   font-size: 1.6rem;
   color: var(--label-color);
-  padding-bottom: 1.6rem;
+  padding-bottom: 2.4rem;
   margin-bottom: 2.4rem;
 }
 
@@ -22,7 +22,6 @@
 .CompanyDetails p a {
   color: var(--text-primary);
   text-decoration: none;
-  font-weight: 600;
 }
 
 .CompanyDetails p a:hover {
@@ -30,13 +29,13 @@
 }
 
 .CompanyDetails svg {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 2.8rem;
+  height: 2.8rem;
   display: inline-block;
   margin-left: auto;
   position: absolute;
   right: 0;
-  top: 0.6rem;
+  top: 1rem;
   transform: translate(0, -50%);
   cursor: pointer;
 }

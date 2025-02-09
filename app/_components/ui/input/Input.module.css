@@ -13,28 +13,31 @@
   color: var(--text-primary);
   outline: none;
   border-bottom: 1px solid var(--color-grey);
-  padding: 0.8rem 0;
+  padding: 1.2rem 0 1.2rem 0.4rem;
   transition: all 0.3s;
   font-family: var(--font-georgia-pro);
 }
 
 .InputWrapper textarea {
   resize: none;
-  min-height: 9.6rem;
+  min-height: 10.4rem;
 }
 
-.InputWrapper textarea::placeholder,
 .InputWrapper input[value=""] label,
 .InputWrapper label {
   font-weight: 500;
   color: var(--label-color);
   font-size: 1.6rem;
   position: absolute;
-  top: -0.4rem;
+  top: 0;
   left: 0.4rem;
   transition: all 0.3s;
   font-family: var(--font-georgia-pro);
   opacity: 0.75;
+}
+
+.InputWrapper textarea ~ label {
+  top: -0.8rem;
 }
 
 .InputWrapper textarea:not([data-text=""]) ~ label,
@@ -42,9 +45,9 @@
 .InputWrapper textarea:focus ~ label,
 .InputWrapper input:focus ~ label {
   top: -1.2rem;
-  font-size: 1.3rem;
-  left: 0;
+  font-size: 1.2rem;
   opacity: 1;
+  font-weight: 600;
 }
 
 .InputWrapper textarea:placeholder-shown ~ label {
@@ -58,13 +61,13 @@
 
 .InputError {
   color: var(--color-error);
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 400;
   position: absolute;
-  top: 0;
+  top: 0.4rem;
   right: 0;
 }
 
 .InputWrapper:has(textarea) .InputError {
-  top: -0.4rem;
+  top: -0.6rem;
 }

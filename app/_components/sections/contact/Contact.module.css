@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.Contact h4 {
+.Contact h3 {
   text-transform: uppercase;
   font-weight: 800;
   text-align: left;
@@ -20,8 +20,8 @@
   margin-bottom: 1.6rem;
 }
 
-.Contact h4 + p {
-  font-weight: 600;
+.Contact h3 + p {
+  line-height: 130%;
 }
 
 .ContactContent {
@@ -42,7 +42,7 @@
     padding: 12rem 0 8rem;
   }
 
-  .Contact h4 {
+  .Contact h3 {
     padding: 6.4rem 0 2.4rem;
     margin-bottom: 2.4rem;
   }
