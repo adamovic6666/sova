@@ -1,14 +1,33 @@
 import React from "react";
 import styles from "./WhoWeAre.module.css";
 import Title from "../../title/Title";
+import Wave from "../../wave/Wave";
+import Quote from "../../svg/Quote";
 
 const WhoWeAre = () => {
   return (
     <section className={styles.WhoWeAre}>
-      <Title tag="h2">
-        <span>Whooooo</span>
-        <span>We are</span>
-      </Title>
+      <Wave bgColor="#131313" />
+      <div className={`container`}>
+        <Title tag="h2" flex="column" color="white">
+          <span>Whooo</span>
+          <span>We are?</span>
+        </Title>
+        <p>
+          We are Sova Creative Studio, a dynamic and innovative full-service
+          creative team based in Serbia, specializing in delivering
+          cost-effective solutions across all aspects of visual communications.
+          Our experience spans collaborations with some of the world&apos;s
+          largest corporations as well as local entrepreneurial start-ups.
+          Regardless of scale, we pride ourselves on providing the same
+          exceptional level of service, ensuring reliable delivery - on time and
+          within budget.
+        </p>
+        <p>
+          <Quote /> Our expertise? We make your brand fly!
+          <Quote />
+        </p>
+      </div>
     </section>
   );
 };

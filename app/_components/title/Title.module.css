@@ -1,10 +1,15 @@
-.contact {
+.column {
   flex-direction: column;
   gap: 0;
   text-align: left;
   align-items: flex-start;
-  -webkit-text-stroke: 1px #000;
+  -webkit-text-stroke: 1px var(--color-bg-dark);
   color: transparent;
   line-height: 100%;
   letter-spacing: 0.5rem;
+}
+
+.white {
+  -webkit-text-stroke: 1px var(--color-bg-light);
+  color: transparent;
 }

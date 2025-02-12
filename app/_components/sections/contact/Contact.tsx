@@ -10,7 +10,7 @@ const Contact = () => {
     <section className={styles.Contact}>
       <Wave bgColor="#fff" />
       <div className={`container ${styles.ContactGrid}`}>
-        <Title tag="h2" className="contact">
+        <Title tag="h2" flex="column">
           <span>Who ?</span>
           <span>Whooo!</span>
         </Title>

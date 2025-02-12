@@ -42,10 +42,12 @@ p {
   position: relative;
 }
 
+a,
 p {
   font-family: var(--font-georgia-pro);
   color: var(--text-primary);
   font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+  line-height: 1.6;
 }
 
 h2 {
@@ -67,7 +69,7 @@ h2 span {
 
 h2 span:nth-of-type(3),
 h2 span:nth-of-type(4) {
-  -webkit-text-stroke: 1px #000;
+  -webkit-text-stroke: 1px var(--color-bg-dark);
   color: transparent;
 }
 

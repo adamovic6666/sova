@@ -1,0 +1,39 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  padding: 4rem 1.6rem 0;
+}
+
+.Footer svg {
+  max-width: 200px;
+}
+
+.FooterContent {
+  border-top: 1px solid var(--color-grey);
+  padding: 2.4rem 0;
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.FooterContent p,
+.FooterContent a {
+  color: var(--text-primary);
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .Footer {
+    padding: 4rem 0;
+  }
+
+  .FooterContent {
+    flex-direction: row;
+    gap: 0;
+  }
+}
