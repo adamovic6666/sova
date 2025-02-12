@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./WhoWeAre.module.css";
 import Title from "../../title/Title";
 import Wave from "../../wave/Wave";
-import Quote from "../../svg/Quote";
 
 const WhoWeAre = () => {
   return (
@@ -23,10 +22,7 @@ const WhoWeAre = () => {
           exceptional level of service, ensuring reliable delivery - on time and
           within budget.
         </p>
-        <p>
-          <Quote /> Our expertise? We make your brand fly!
-          <Quote />
-        </p>
+        <p>Our expertise? We make your brand fly!</p>
       </div>
     </section>
   );
