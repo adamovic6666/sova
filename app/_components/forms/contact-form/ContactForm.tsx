@@ -11,7 +11,7 @@ const schema = z.object({
   email: z.string().email("Invalid email address"),
   subject: z.string().min(1, "Subject is required"),
   message: z.string().min(1, "Message is required"),
-  budget: z.string().nonempty("Please choose a budget"),
+  budget: z.string().nonempty(""),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -44,7 +44,7 @@ const ContactForm = () => {
         control={control}
         inputType="textarea"
       />
-      <Button className="m-l-auto">Submit</Button>
+      <Button className="m-l-auto">Send</Button>
     </form>
   );
 };

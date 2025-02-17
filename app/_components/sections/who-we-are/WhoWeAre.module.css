@@ -1,5 +1,5 @@
 .WhoWeAre {
-  background-color: var(--color-bg-dark);
+  background-color: var(--who-we-are);
   padding: 8rem 0 10.4rem;
   position: relative;
   width: 100%;
@@ -12,7 +12,7 @@
 .WhoWeAre p {
   color: var(--color-bg-light);
   max-width: 85dvw;
-  line-height: 180%;
+  line-height: 200%;
   position: relative;
   font-size: 1.8rem;
 }
@@ -28,7 +28,6 @@
 
   .WhoWeAre p {
     font-size: 1.8rem;
-    max-width: 55dvw;
   }
   .WhoWeAre h2 {
     margin-bottom: 6.4rem;

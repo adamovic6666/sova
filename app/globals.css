@@ -1,12 +1,12 @@
 :root {
   --color-grey: #d4d4d4;
   --color-bg-white: #fff;
-  --color-bg-dark: #131313;
+  --color-bg-dark: #000;
   --color-bg-light: #f0f0f0;
   --text-primary: #444;
-  --button-border-color: #131313;
+  --button-border-color: #444;
   --color-error: #ff0000;
-  --label-color: #111;
+  --who-we-are: #121212;
 }
 
 * {
@@ -36,7 +36,7 @@ p {
 }
 
 .container {
-  max-width: 116rem;
+  max-width: 112rem;
   margin: 0 auto;
   padding: 0 1.6rem;
   position: relative;
@@ -46,35 +46,38 @@ a,
 p {
   font-family: var(--font-georgia-pro);
   color: var(--text-primary);
-  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
 h2 {
-  font-size: clamp(9.2rem, 8vw, 17rem);
+  font-size: clamp(9.2rem, 7.5577rem + 7.2436vw, 16.2rem);
   display: flex;
   gap: 2.5vw;
   overflow: hidden;
   width: 100%;
   align-items: center;
   justify-content: center;
-  letter-spacing: 0.5rem;
+  font-weight: 400;
 }
 
 h2 span {
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: 1rem;
+  letter-spacing: 0.24rem;
+  line-height: 98%;
 }
 
 h2 span:nth-of-type(3),
 h2 span:nth-of-type(4) {
-  -webkit-text-stroke: 1px var(--color-bg-dark);
+  -webkit-text-stroke: 0.6px var(--color-bg-dark);
   color: transparent;
 }
 
 h3 {
   font-size: clamp(2.8rem, 2.5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: 0.16rem;
 }
 
 .m-l-auto {

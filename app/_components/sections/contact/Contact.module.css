@@ -37,6 +37,10 @@
   flex: 1;
 }
 
+.Contact button {
+  margin-top: 6.4rem;
+}
+
 @media (min-width: 768px) {
   .Contact {
     padding: 12rem 0 8rem;
@@ -49,7 +53,7 @@
 
   .ContactContent {
     flex-direction: row;
-    gap: 3.2rem;
+    gap: 4.8rem;
     padding-top: 8rem;
   }
 

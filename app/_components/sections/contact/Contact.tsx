@@ -11,7 +11,7 @@ const Contact = () => {
       <Wave bgColor="#fff" />
       <div className={`container ${styles.ContactGrid}`}>
         <Title tag="h2" flex="column">
-          <span>Who ?</span>
+          <span>Who?</span>
           <span>Whooo!</span>
         </Title>
         <Title tag="h3">Let&apos;s talk</Title>

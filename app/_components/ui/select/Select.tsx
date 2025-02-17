@@ -23,7 +23,6 @@ const Select = ({
             className={styles.Select}
             value={field.value}
           >
-            <option value="-- Choose a budget --">-- Choose a budget --</option>
             <option value="Up to $1,000">Up to $1,000</option>
             <option value="$1,000 - $2,500">$1,000 - $2,500</option>
             <option value="$2,500 - $5,000">$2,500 - $5,000</option>

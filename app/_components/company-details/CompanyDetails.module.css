@@ -9,20 +9,36 @@
 }
 
 .CompanyDetails p {
-  font-weight: 500;
   font-size: 1.6rem;
-  color: var(--label-color);
-  padding-bottom: 2.4rem;
-  margin-bottom: 2.4rem;
+  color: var(--text-primary);
+  position: relative;
+  height: 7.2rem;
+}
+
+.CompanyDetails p:nth-of-type(1) {
+  height: 3.6rem;
+}
+
+.CompanyDetails p:nth-of-type(1) span {
+  top: 0;
 }
 
 .CompanyDetails p span {
-  opacity: 0.75;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .CompanyDetails p a {
   color: var(--text-primary);
   text-decoration: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: grid;
+  place-content: center;
 }
 
 .CompanyDetails p a:hover {
@@ -34,10 +50,6 @@
   height: 2.8rem;
   display: inline-block;
   margin-left: auto;
-  position: absolute;
-  right: 0;
-  top: 1rem;
-  transform: translate(0, -50%);
   cursor: pointer;
 }
 

@@ -1,7 +1,7 @@
 .InputWrapper {
   width: 100%;
   position: relative;
-  margin-bottom: 2.4rem;
+  height: 7.2rem;
 }
 
 .InputWrapper textarea,
@@ -13,27 +13,25 @@
   color: var(--text-primary);
   outline: none;
   border-bottom: 1px solid var(--color-grey);
-  padding: 1.2rem 0 1.2rem 0.4rem;
+  padding: 0.8rem 0;
   transition: all 0.3s;
   font-family: var(--font-georgia-pro);
 }
 
 .InputWrapper textarea {
   resize: none;
-  min-height: 10.4rem;
+  min-height: 11.2rem;
 }
 
 .InputWrapper input[value=""] label,
 .InputWrapper label {
-  font-weight: 500;
-  color: var(--label-color);
+  color: var(--text-primary);
   font-size: 1.6rem;
   position: absolute;
-  top: 0;
-  left: 0.4rem;
+  top: -1rem;
+  left: 0;
   transition: all 0.3s;
   font-family: var(--font-georgia-pro);
-  opacity: 0.75;
 }
 
 .InputWrapper textarea ~ label {
@@ -46,7 +44,6 @@
 .InputWrapper input:focus ~ label {
   top: -1.2rem;
   font-size: 1.2rem;
-  opacity: 1;
   font-weight: 600;
 }
 
