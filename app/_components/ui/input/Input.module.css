@@ -28,14 +28,14 @@
   color: var(--text-primary);
   font-size: 1.6rem;
   position: absolute;
-  top: -1rem;
+  top: -1.1rem;
   left: 0;
   transition: all 0.3s;
   font-family: var(--font-georgia-pro);
 }
 
 .InputWrapper textarea ~ label {
-  top: -0.8rem;
+  top: -0.7rem;
 }
 
 .InputWrapper textarea:not([data-text=""]) ~ label,
@@ -61,7 +61,7 @@
   font-size: 1.2rem;
   font-weight: 400;
   position: absolute;
-  top: 0.4rem;
+  top: -1rem;
   right: 0;
 }
 

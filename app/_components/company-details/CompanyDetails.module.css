@@ -20,7 +20,7 @@
 }
 
 .CompanyDetails p:nth-of-type(1) span {
-  top: 0;
+  top: -0.1rem;
 }
 
 .CompanyDetails p span {
