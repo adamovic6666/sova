@@ -24,7 +24,7 @@
   color: var(--text-primary);
   font-size: 1.6rem;
   position: absolute;
-  top: 0;
+  top: -1rem;
   left: 0;
   transition: all 0.3s;
   font-family: var(--font-georgia-pro);
@@ -34,7 +34,7 @@
   border-bottom: 1px solid var(--text-primary, #333);
 }
 
-.Select:not([value=""]) ~ label,
+.Select:not([data-text=""]) ~ label,
 .Select:focus ~ label {
   top: -1.2rem;
   font-size: 1.2rem;

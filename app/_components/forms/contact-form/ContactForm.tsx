@@ -11,7 +11,7 @@ const schema = z.object({
   email: z.string().email("Invalid email address"),
   subject: z.string().min(1, "Subject is required"),
   message: z.string().min(1, "Message is required"),
-  budget: z.string().nonempty(""),
+  budget: z.string().min(1, "Budget is required"),
 });
 
 type FormData = z.infer<typeof schema>;
