@@ -14,8 +14,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6.4rem 1.6rem 4rem;
+  margin-top: 6.4rem;
   width: 100%;
+}
+
+.OurWorkGrid + a {
+  margin-top: 4rem;
 }
 
 .OurWorkGrid h3 {
@@ -57,10 +61,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.2rem;
-    padding: 12rem 0 8rem;
+    margin-top: 12rem;
   }
 
   .OurWorkItem p {
     margin-bottom: 0;
+  }
+
+  .OurWorkGrid + a {
+    margin-top: 8rem;
   }
 }
