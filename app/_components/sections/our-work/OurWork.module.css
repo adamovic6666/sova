@@ -11,14 +11,13 @@
 }
 
 .OurWork h2 {
-  margin-bottom: 10rem;
+  margin-bottom: 6.4rem;
 }
 
 .OurWorkGrid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 6.4rem;
   width: 100%;
 }
 
@@ -74,5 +73,9 @@
 
   .OurWorkGrid + a {
     margin-top: 8rem;
+  }
+
+  .OurWork h2 {
+    margin-bottom: 0;
   }
 }
