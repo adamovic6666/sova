@@ -1,0 +1,119 @@
+.MenuWrapper {
+  position: relative;
+  background-color: var(--color-bg-light);
+  position: fixed;
+  width: 100dvw;
+  height: 100dvh;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MenuWrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 112rem;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+:global(.open) {
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.Menu a {
+  font-family: var(--font-open-sans);
+  font-weight: 800;
+  font-size: clamp(2.8rem, 1.6rem + 1.6vw, 4rem);
+  color: var(--text-primary);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  z-index: 1001;
+  transition: all 0.3s ease-in-out;
+  line-height: 1;
+  margin-top: 0.4rem;
+}
+
+.Menu a.active {
+  opacity: 1;
+}
+
+.Menu a.notActive {
+  opacity: 0.5;
+}
+
+.Menu span {
+  opacity: 0.3;
+  font-size: clamp(9.2rem, 7.5577rem + 7.7436vw, 20vh);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: var(--font-open-sans);
+  line-height: 0.7;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-bg-dark);
+}
+
+.MenuWrapper:global(.open) + button {
+  border: 1px solid var(--color-bg-dark);
+}
+
+.Socials {
+  display: flex;
+  gap: 1rem;
+  width: auto;
+  z-index: 1001;
+  position: absolute;
+  left: 1.6rem;
+  bottom: -10rem;
+}
+
+.Socials svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .MenuWrapper > div {
+    flex-direction: row-reverse;
+  }
+
+  .Menu {
+    width: 50dvw;
+    margin-left: auto;
+    height: 100%;
+    width: 50%;
+  }
+
+  .Socials {
+    position: relative;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+  }
+
+  .Socials svg {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+  .Menu a {
+    margin-top: 0.8rem;
+  }
+}

@@ -1,0 +1,37 @@
+.Header {
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.Header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header:has(:global(.open)) svg:global(.logo) {
+  filter: invert(1);
+}
+
+.Header svg {
+  height: 4rem;
+  z-index: 1001;
+  transition: all 0.3s ease-in-out;
+}
+
+.Header button {
+  text-transform: uppercase;
+  font-family: var(--font-open-sans);
+  font-weight: 800;
+  background-color: var(--color-bg-light);
+  border: none;
+  padding: 0.8rem 2.4rem;
+  z-index: 1001;
+}
