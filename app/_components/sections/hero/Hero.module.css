@@ -23,7 +23,7 @@
 }
 
 .Hero h1 {
-  font-size: clamp(9.2rem, 7.5577rem + 7.2436vw, 16.2rem);
+  font-size: clamp(7.2rem, 6.2577rem + 7.2436vw, 16.2rem);
   display: flex;
   width: 100%;
   justify-content: flex-start;
