@@ -21,7 +21,11 @@ const Menu = () => {
 
   return (
     <>
-      <div className={`${styles.MenuWrapper} ${openMenu ? "open" : ""}`}>
+      <div
+        className={`${styles.MenuWrapper} ${
+          openMenu ? `${styles.MenuOpen} menu-open` : ""
+        }`}
+      >
         <div className="container">
           <nav className={styles.Menu}>
             <span>We</span>
