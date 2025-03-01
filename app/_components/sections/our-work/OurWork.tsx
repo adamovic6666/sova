@@ -10,12 +10,12 @@ const OurWork = () => {
   return (
     <section className={styles.OurWork}>
       <Wave bgColor="#f0f0f0" />
-      <Title tag="h2">
-        <span>Our</span>
-        <span>work</span>
-        <span>Our</span>
-        <span>work</span>
-      </Title>
+      <div className="container">
+        <Title tag="h2" flex="column">
+          <span>Our</span>
+          <span>work</span>
+        </Title>
+      </div>
       <div className={`${styles.OurWorkGrid} container`}>
         {OurWorkData.map(({ image, alt, title, project }, index) => {
           return (

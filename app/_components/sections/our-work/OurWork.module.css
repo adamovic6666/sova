@@ -12,6 +12,18 @@
 
 .OurWork h2 {
   margin-bottom: 6.4rem;
+  text-align: left;
+}
+
+.OurWork > div:has(h2) {
+  width: 100%;
+}
+
+.OurWork > div:has(h2) h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .OurWorkGrid {
@@ -64,7 +76,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.2rem;
-    margin-top: 12rem;
+    margin-top: 9.6rem;
   }
 
   .OurWorkItem p {
@@ -76,6 +88,11 @@
   }
 
   .OurWork h2 {
-    margin-bottom: 8rem;
+    margin-bottom: 0;
+  }
+
+  .OurWork > div:has(h2) h2 {
+    flex-direction: row;
+    gap: 2.4rem;
   }
 }

@@ -7,6 +7,7 @@
   --button-border-color: #444;
   --color-error: #ff3333;
   --who-we-are: #121212;
+  --color-header-elements: #c0c0c0;
 }
 
 * {
@@ -43,12 +44,21 @@ h6 {
   font-family: var(--font-open-sans);
 }
 
+main {
+  position: relative;
+}
+
 .container {
   max-width: 112rem;
   margin: 0 auto;
   padding: 0 1.6rem;
   position: relative;
 }
+
+/* section {
+  position: sticky;
+  top: 0;
+} */
 
 a,
 p {
@@ -59,7 +69,7 @@ p {
 }
 
 h2 {
-  font-size: clamp(9.2rem, 7.5577rem + 7.2436vw, 16.2rem);
+  font-size: clamp(5.4rem, 5.4rem + 6.25vw, 14.4rem);
   display: flex;
   gap: 2.5vw;
   overflow: hidden;
@@ -74,12 +84,6 @@ h2 span {
   font-weight: 800;
   letter-spacing: 0.24rem;
   line-height: 98%;
-}
-
-h2 span:nth-of-type(3),
-h2 span:nth-of-type(4) {
-  -webkit-text-stroke: 1px var(--color-bg-dark);
-  color: transparent;
 }
 
 h3 {
@@ -97,6 +101,11 @@ h3 {
 
 .container:has(.menu-open) button {
   border: 1px solid var(--color-bg-dark);
+  background-color: transparent;
+}
+
+.container:has(.menu-open) button:hover {
+  color: var(--color-bg-dark);
 }
 
 @media (min-width: 768px) {
