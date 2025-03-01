@@ -48,7 +48,7 @@
 .Menu a {
   font-size: 4dvh;
   line-height: 2.4dvh;
-  transform: translateY(0.3dvh);
+  transform: translateY(0.2dvh);
   color: var(--text-primary);
   text-decoration: none;
   position: relative;
