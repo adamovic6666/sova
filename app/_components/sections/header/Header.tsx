@@ -6,7 +6,7 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const [logoColor, setLogoColor] = useState("white");
+  const [logoColor, setLogoColor] = useState<"black" | "white">("white");
   let lastScrollY = 0;
 
   useEffect(() => {
