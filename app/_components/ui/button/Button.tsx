@@ -9,12 +9,14 @@ const Button = ({
   type = "button",
   href = "/",
   className = "",
+  color,
 }: {
   children: React.ReactNode;
   onClick?: () => void;
   type?: "button" | "link";
   href?: string;
   className?: string;
+  color?: "black" | "white";
 }) => {
   const el =
     type === "link" ? (
@@ -22,7 +24,17 @@ const Button = ({
         {children}
       </Link>
     ) : (
-      <button className={`${className} ${styles.Button}`} onClick={onClick}>
+      <button
+        style={
+          color
+            ? color === "black"
+              ? { backgroundColor: "black", color: "white" }
+              : { backgroundColor: "white", color: "black" }
+            : undefined
+        }
+        className={`${className} ${styles.Button}`}
+        onClick={onClick}
+      >
         {children}
       </button>
     );

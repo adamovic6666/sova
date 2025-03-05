@@ -8,7 +8,7 @@ import Instagram from "../../svg/Instagram";
 import Facebook from "../../svg/Facebook";
 import { usePathname } from "next/navigation";
 
-const Menu = () => {
+const Menu = ({ color }: { color: "black" | "white" }) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [hovered, setHovered] = useState<string>("");
   const pathname = usePathname();
@@ -93,7 +93,13 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      <Button onClick={() => setOpenMenu(!openMenu)}>
+      <Button
+        onClick={() => {
+          setOpenMenu(!openMenu);
+          document.body.style.overflow = openMenu ? "auto" : "hidden";
+        }}
+        color={color}
+      >
         {openMenu ? "Close" : "Menu"}
       </Button>
     </>

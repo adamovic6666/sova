@@ -7,7 +7,7 @@ import Wave from "../../wave/Wave";
 
 const Contact = () => {
   return (
-    <section className={styles.Contact} data-bg-color="white">
+    <section className={styles.Contact} data-bg="white">
       <Wave bgColor="#fff" />
       <div className={`container ${styles.ContactGrid}`}>
         <Title tag="h2" flex="column">

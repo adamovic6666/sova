@@ -6,6 +6,7 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const [logoColor, setLogoColor] = useState("white");
   let lastScrollY = 0;
 
   useEffect(() => {
@@ -22,11 +23,35 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          console.log(entry, "entry");
+          if (entry.isIntersecting) {
+            const bgColor = entry.target.getAttribute("data-bg");
+            console.log(bgColor, "bgColor");
+            setLogoColor(bgColor === "dark" ? "white" : "black");
+          }
+        });
+      },
+      { root: null, threshold: 0 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
   return (
     <header className={`${styles.Header} ${isVisible ? styles.visible : ""}`}>
       <div className="container">
-        <LogoWhite />
-        <Menu />
+        <LogoWhite logoColor={logoColor} />
+        <Menu color={logoColor} />
       </div>
     </header>
   );

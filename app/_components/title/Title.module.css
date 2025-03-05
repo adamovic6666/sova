@@ -10,6 +10,6 @@
 }
 
 .white {
-  -webkit-text-stroke: 1px var(--color-bg-light);
+  -webkit-text-stroke: 1px white;
   color: transparent;
 }

@@ -8,7 +8,7 @@ import Wave from "../../wave/Wave";
 
 const OurWork = () => {
   return (
-    <section className={styles.OurWork}>
+    <section className={styles.OurWork} data-bg="white">
       <Wave bgColor="#f0f0f0" />
       <div className="container">
         <Title tag="h2" flex="column">

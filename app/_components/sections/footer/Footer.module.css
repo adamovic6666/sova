@@ -22,7 +22,6 @@
 .FooterContent p,
 .FooterContent a {
   color: var(--text-primary);
-  font-size: 1.4rem;
 }
 
 @media (min-width: 768px) {
