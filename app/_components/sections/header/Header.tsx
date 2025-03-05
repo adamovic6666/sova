@@ -48,7 +48,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`${styles.Header} ${isVisible ? styles.visible : ""}`}>
+    <header
+      className={`${styles.Header} ${
+        logoColor === "black" ? styles.White : ""
+      } ${isVisible ? styles.visible : ""}`}
+    >
       <div className="container">
         <LogoWhite logoColor={logoColor} />
         <Menu color={logoColor} />
