@@ -15,6 +15,10 @@ const OurWork = () => {
           <span>Our</span>
           <span>work</span>
         </Title>
+        <Title tag="h2" flex="column">
+          <span>Our</span>
+          <span>work</span>
+        </Title>
       </div>
       <div className={`${styles.OurWorkGrid} container`}>
         {OurWorkData.map(({ image, alt, title, project }, index) => {

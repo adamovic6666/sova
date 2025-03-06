@@ -29,8 +29,14 @@
   justify-content: flex-start;
   z-index: 1;
   text-transform: uppercase;
-  -webkit-text-stroke: 2px var(--color-bg-light);
+  -webkit-text-stroke: 1px var(--color-bg-light);
   color: transparent;
   font-weight: 800;
   margin-top: -3.2rem;
+}
+
+@media (min-width: 768px) {
+  .Hero h1 {
+    -webkit-text-stroke: 2px var(--color-bg-light);
+  }
 }

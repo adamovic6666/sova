@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.Contact h2:nth-of-type(1) {
+  color: var(--color-bg-white);
+}
+
 .Contact h3 {
   text-transform: uppercase;
   font-weight: 800;

@@ -67,7 +67,7 @@
   font-size: 11dvh;
   line-height: 8.6dvh;
   color: transparent;
-  -webkit-text-stroke: 2px var(--color-bg-dark);
+  -webkit-text-stroke: 1px var(--color-bg-dark);
   opacity: 0.3;
   vertical-align: middle;
 }
