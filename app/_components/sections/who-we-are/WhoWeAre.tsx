@@ -5,8 +5,8 @@ import Wave from "../../wave/Wave";
 
 const WhoWeAre = () => {
   return (
-    <section className={styles.WhoWeAre} data-bg="dark">
-      <Wave bgColor="#121212" />
+    <section className={styles.WhoWeAre} data-bg="white">
+      <Wave bgColor="#fff" />
       <div className={`container`}>
         <Title tag="h2" flex="column" color="white">
           <span>Whooo</span>

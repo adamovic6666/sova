@@ -14,10 +14,6 @@ const Contact = () => {
           <span>Who?</span>
           <span>Whooo!</span>
         </Title>
-        <Title tag="h2" flex="column">
-          <span>Who?</span>
-          <span>Whooo!</span>
-        </Title>
         <Title tag="h3">Let&apos;s talk</Title>
         <p>
           Got a vision? Reach out and we&apos;ll craft something unforgettable

@@ -8,10 +8,11 @@
 
 .WhoWeAre h2 {
   margin-bottom: 6.4rem;
+  -webkit-text-stroke: 1px #000;
 }
 
 .WhoWeAre p {
-  color: var(--color-bg-light);
+  color: var(--color-primary);
   max-width: 85dvw;
   line-height: 200%;
   position: relative;
@@ -31,6 +32,7 @@
   }
   .WhoWeAre h2 {
     margin-bottom: 6.4rem;
+    -webkit-text-stroke: 2px #000;
   }
 
   .WhoWeAre p:last-of-type {
