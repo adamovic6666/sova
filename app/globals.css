@@ -4,9 +4,10 @@
   --color-bg-dark: #000;
   --color-bg-light: #f0f0f0;
   --text-primary: #444;
+  --text-secondary: #8d8d8d;
   --button-border-color: #000;
   --color-error: #ff3333;
-  --who-we-are: #fff;
+  --who-we-are: #131313;
   --color-header-elements: #c0c0c0;
 }
 
@@ -67,7 +68,6 @@ h2 {
   font-size: clamp(4.2rem, 4.2rem + 6.25vw, 14.4rem);
   display: flex;
   gap: 2.5vw;
-  overflow: hidden;
   width: 100%;
   align-items: center;
   justify-content: center;

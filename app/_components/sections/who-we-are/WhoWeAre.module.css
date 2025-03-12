@@ -1,18 +1,19 @@
 .WhoWeAre {
   background-color: var(--who-we-are);
   padding: 8rem 0 10.4rem;
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100%;
   border-top: 1px solid var(--who-we-are);
 }
 
 .WhoWeAre h2 {
   margin-bottom: 6.4rem;
-  -webkit-text-stroke: 1px #000;
+  -webkit-text-stroke: 1px #fff;
 }
 
 .WhoWeAre p {
-  color: var(--color-primary);
+  color: #fff;
   max-width: 85dvw;
   line-height: 200%;
   position: relative;
@@ -32,7 +33,7 @@
   }
   .WhoWeAre h2 {
     margin-bottom: 6.4rem;
-    -webkit-text-stroke: 2px #000;
+    -webkit-text-stroke: 2px #fff;
   }
 
   .WhoWeAre p:last-of-type {

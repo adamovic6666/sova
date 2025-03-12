@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   height: calc(100dvh + 84px);
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .Hero video {

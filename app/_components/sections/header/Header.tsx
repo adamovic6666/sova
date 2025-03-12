@@ -29,10 +29,8 @@ const Header = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log(entry, "entry");
           if (entry.isIntersecting) {
             const bgColor = entry.target.getAttribute("data-bg");
-            console.log(bgColor, "bgColor");
             setLogoColor(bgColor === "dark" ? "white" : "black");
           }
         });

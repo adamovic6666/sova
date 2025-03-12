@@ -6,9 +6,9 @@ import Wave from "../../wave/Wave";
 const WhoWeAre = () => {
   return (
     <section className={styles.WhoWeAre} data-bg="white">
-      <Wave bgColor="#fff" />
+      <Wave bgColor="#131313" />
       <div className={`container`}>
-        <Title tag="h2" flex="column" color="white">
+        <Title tag="h2" flex="column">
           <span>Whooo</span>
           <span>We are?</span>
         </Title>

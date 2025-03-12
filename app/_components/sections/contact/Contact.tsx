@@ -20,7 +20,7 @@ const Contact = () => {
           together!
         </p>
         <div className={styles.ContactContent}>
-          <ContactForm />
+          {/* <ContactForm /> */}
           <CompanyDetails />
         </div>
       </div>

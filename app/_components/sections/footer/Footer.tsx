@@ -7,7 +7,8 @@ const Footer = () => {
     <footer className={`container ${styles.Footer}`}>
       {/* <Logo /> */}
       <div className={styles.FooterContent}>
-        <p>Sova Creative Studio | All rights reserved</p>
+        <p>© 2025 Sova Creative Studio</p>
+        <span>|</span>
         <Link href="/privacy-notice">Privacy Notice</Link>
       </div>
     </footer>

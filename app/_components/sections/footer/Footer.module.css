@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  padding: 2.4rem 1.6rem 0;
+  padding: 0.8rem 1.6rem 0;
 }
 
 .Footer svg {
@@ -15,13 +15,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
   gap: 0.8rem;
 }
 
+.FooterContent span,
 .FooterContent p,
 .FooterContent a {
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 
 @media (min-width: 768px) {
@@ -30,7 +31,6 @@
   }
 
   .FooterContent {
-    flex-direction: row;
     gap: 0;
     border-top: 1px solid var(--color-grey);
     margin-top: 2.4rem;
@@ -39,5 +39,14 @@
   .FooterContent p,
   .FooterContent a {
     font-size: 1.6rem;
+  }
+
+  .FooterContent span {
+    display: none;
+  }
+
+  .FooterContent p,
+  .FooterContent a {
+    color: var(--text-primary);
   }
 }
