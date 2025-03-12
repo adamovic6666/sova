@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../../title/Title";
 import styles from "./Contact.module.css";
-import ContactForm from "../../forms/contact-form/ContactForm";
+// import ContactForm from "../../forms/contact-form/ContactForm";
 import CompanyDetails from "../../company-details/CompanyDetails";
 import Wave from "../../wave/Wave";
 
