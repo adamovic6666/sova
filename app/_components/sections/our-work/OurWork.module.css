@@ -1,38 +1,67 @@
 .OurWork {
   background-color: var(--color-bg-light);
   padding: 5.6rem 0 10.4rem;
-  position: sticky;
-  top: 0;
+  position: relative;
   border-top: 1px solid var(--color-bg-light);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 100dvh;
-}
-/* Make OurWorkGrid a horizontal scrolling container */
-.OurWorkGrid {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 3.2rem;
-  padding: 0 3rem;
-  scrollbar-width: none; /* Hide scrollbar */
 }
 
-.OurWorkGrid::-webkit-scrollbar {
-  display: none;
+.OurWorkContainer {
+  background-color: var(--color-bg-light);
+  z-index: 10;
+  padding-top: 2rem;
+}
+
+.OurWork h2 {
+  margin-bottom: 6.4rem;
+  text-align: left;
+}
+
+.OurWork > div:has(h2) {
+  width: 100%;
+}
+
+.OurWork > div:has(h2) h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.OurWorkGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 /* Each item in a row */
 .OurWorkItem {
-  flex: 0 0 60vw;
-  max-width: 400px;
-  text-align: center;
-  scroll-snap-align: start;
+  width: 100%;
+}
+
+.OurWorkGrid h3 {
+  font-weight: 800;
+  font-family: var(--font-open-sans);
+  text-transform: uppercase;
+  margin: 0.8rem 0 0.4rem;
+}
+
+.OurWorkItem p {
+  font-family: var(--font-georgia-pro);
+  border-bottom: 1px solid var(--color-grey);
+  padding-bottom: 1.2rem;
+  margin-bottom: 2.4rem;
+  color: var(--text-primary);
+  text-transform: capitalize;
+}
+
+.OurWorkItem:last-of-type p {
+  margin-bottom: 0;
 }
 
 /* Ensure images keep correct aspect ratio */
@@ -50,20 +79,22 @@
 /* Larger screens */
 @media (min-width: 768px) {
   .OurWork {
-    padding: 12rem 0 24rem;
+    padding: 12rem 0 16rem;
   }
 
-  .OurWorkItem {
-    flex: 0 0 40vw;
-    max-width: 500px;
+  .OurWorkGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    padding: 4rem 0;
   }
 
-  .OurWorkGrid + a {
-    margin-top: 8rem;
+  .OurWorkItem p {
+    margin-bottom: 0;
   }
 
   .OurWork h2 {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
 
   .OurWork > div:has(h2) h2 {
