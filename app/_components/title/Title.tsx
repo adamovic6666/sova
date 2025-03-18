@@ -6,17 +6,22 @@ const Title = forwardRef<
   HTMLDivElement,
   {
     children: React.ReactNode;
-    tag: string;
+    tag: unknown;
     flex?: string;
     color?: string;
   }
 >(({ children, tag = "div", flex = "", color = "black" }, ref) => {
-  const Tag = tag as keyof JSX.IntrinsicElements;
+  const Tag = tag as unknown as React.ElementType;
   return (
-    <Tag ref={ref} className={`${styles[flex]} ${styles[color]}`}>
+    <Tag
+      {...(tag === "div" ? { ref } : {})}
+      className={`${styles[flex]} ${styles[color]}`}
+    >
       {children}
     </Tag>
   );
 });
+
+Title.displayName = "Title";
 
 export default Title;
