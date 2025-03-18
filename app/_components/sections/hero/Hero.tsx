@@ -14,7 +14,9 @@ const Hero = () => {
   const logoRef = useRef(null);
   const titleRef = useRef<HTMLDivElement>(null);
   const isAnimated = useRef(false);
-  const isAnimatedDone = sessionStorage.getItem("animationDone") === "true";
+  const isAnimatedDone =
+    typeof window !== "undefined" &&
+    sessionStorage.getItem("animationDone") === "true";
   useEffect(() => {
     if (
       typeof window !== "undefined" &&

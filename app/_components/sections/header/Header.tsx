@@ -9,7 +9,9 @@ const Header = () => {
   const [logoColor, setLogoColor] = useState<"black" | "white">("white");
   const lastScrollY = useRef<number>(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const isAnimatedDone = sessionStorage.getItem("animationDone") === "true";
+  const isAnimatedDone =
+    typeof window !== "undefined" &&
+    sessionStorage.getItem("animationDone") === "true";
 
   useEffect(() => {
     if (isAnimatedDone) {
