@@ -11,12 +11,9 @@ const Title = forwardRef<
     color?: string;
   }
 >(({ children, tag = "div", flex = "", color = "black" }, ref) => {
-  const Tag = tag as unknown as React.ElementType;
+  const Tag = tag as "div" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   return (
-    <Tag
-      {...(tag === "div" ? { ref } : {})}
-      className={`${styles[flex]} ${styles[color]}`}
-    >
+    <Tag ref={ref} className={`${styles[flex]} ${styles[color]}`}>
       {children}
     </Tag>
   );

@@ -17,6 +17,7 @@ const Hero = () => {
   const isAnimatedDone =
     typeof window !== "undefined" &&
     sessionStorage.getItem("animationDone") === "true";
+
   useEffect(() => {
     if (
       typeof window !== "undefined" &&
