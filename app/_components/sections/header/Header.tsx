@@ -1,27 +1,47 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import LogoWhite from "../../svg/LogoWhite";
 import Menu from "../../ui/menu/Menu";
 import styles from "./Header.module.css";
 
 const Header = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [logoColor, setLogoColor] = useState<"black" | "white">("white");
-  let lastScrollY = 0;
+  const lastScrollY = useRef<number>(0);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const isAnimatedDone = sessionStorage.getItem("animationDone") === "true";
 
   useEffect(() => {
+    if (isAnimatedDone) {
+      setIsVisible(true);
+    } else {
+      timeoutRef.current = setTimeout(() => {
+        setIsVisible(true);
+      }, 5500);
+    }
+
     const handleScroll = () => {
-      if (window.scrollY < lastScrollY || window.scrollY < 100) {
+      if (window.scrollY < lastScrollY.current) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
+
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
       }
-      lastScrollY = window.scrollY;
+      lastScrollY.current = window.scrollY;
     };
 
+    lastScrollY.current = window.scrollY;
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [isAnimatedDone]);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");

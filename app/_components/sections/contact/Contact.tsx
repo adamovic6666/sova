@@ -4,10 +4,11 @@ import styles from "./Contact.module.css";
 // import ContactForm from "../../forms/contact-form/ContactForm";
 import CompanyDetails from "../../company-details/CompanyDetails";
 import Wave from "../../wave/Wave";
+import Footer from "../footer/Footer";
 
 const Contact = () => {
   return (
-    <section className={styles.Contact} data-bg="white">
+    <section className={`panel ${styles.Contact}`} data-bg="white">
       <Wave bgColor="#fff" />
       <div className={`container ${styles.ContactGrid}`}>
         <div className="sticky">
@@ -27,6 +28,7 @@ const Contact = () => {
           <CompanyDetails />
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

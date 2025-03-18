@@ -1,19 +1,22 @@
-import React, { JSX } from "react";
+"use client";
+import React, { forwardRef } from "react";
 import styles from "./Title.module.css";
 
-const Title = ({
-  children,
-  tag = "div",
-  flex = "",
-  color = "black",
-}: {
-  children: React.ReactNode;
-  tag: string;
-  flex?: string;
-  color?: string;
-}) => {
+const Title = forwardRef<
+  HTMLDivElement,
+  {
+    children: React.ReactNode;
+    tag: string;
+    flex?: string;
+    color?: string;
+  }
+>(({ children, tag = "div", flex = "", color = "black" }, ref) => {
   const Tag = tag as keyof JSX.IntrinsicElements;
-  return <Tag className={`${styles[flex]} ${styles[color]}`}>{children}</Tag>;
-};
+  return (
+    <Tag ref={ref} className={`${styles[flex]} ${styles[color]}`}>
+      {children}
+    </Tag>
+  );
+});
 
 export default Title;

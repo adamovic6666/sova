@@ -97,6 +97,7 @@ const Menu = ({ color }: { color: "black" | "white" }) => {
         onClick={() => {
           setOpenMenu(!openMenu);
           document.body.style.overflow = openMenu ? "auto" : "hidden";
+          document.body.style.overflowX = "hidden";
         }}
         color={color}
       >
