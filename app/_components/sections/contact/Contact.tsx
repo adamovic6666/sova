@@ -5,6 +5,7 @@ import styles from "./Contact.module.css";
 import CompanyDetails from "../../company-details/CompanyDetails";
 import Wave from "../../wave/Wave";
 import Footer from "../footer/Footer";
+import ContactForm from "../../forms/contact-form/ContactForm";
 
 const Contact = () => {
   return (
@@ -24,7 +25,7 @@ const Contact = () => {
           together!
         </p>
         <div className={styles.ContactContent}>
-          {/* <ContactForm /> */}
+          <ContactForm />
           <CompanyDetails />
         </div>
       </div>
