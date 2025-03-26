@@ -26,8 +26,13 @@
   position: relative;
   z-index: 1001;
 }
+
+.Header a {
+  display: flex;
+  align-items: center;
+}
 .Header a svg {
-  height: 3.2rem;
+  height: 2.8rem;
   z-index: 1001;
   transition: all 0.3s ease-in-out;
 }
@@ -39,9 +44,10 @@
   background-color: var(--color-header-elements);
   color: var(--color-bg-dark);
   border: none;
-  padding: 0.8rem 2.4rem;
+  padding: 0.45rem 2rem;
   z-index: 1001;
   position: relative;
+  font-size: 1.4rem;
 }
 
 .White {
@@ -50,7 +56,16 @@
 }
 
 @media (min-width: 768px) {
+  .Header a svg {
+    height: 3.2rem;
+  }
+
   .Header svg {
     height: 4rem;
+  }
+
+  .Header button {
+    font-size: 1.6rem;
+    padding: 0.8rem 2.4rem;
   }
 }

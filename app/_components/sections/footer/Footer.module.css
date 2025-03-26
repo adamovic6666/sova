@@ -29,7 +29,7 @@
   color: var(--text-secondary);
 }
 
-@media (min-width: 360px) {
+@media (min-width: 420px) {
   .FooterContent * {
     font-size: 1.6rem;
   }
