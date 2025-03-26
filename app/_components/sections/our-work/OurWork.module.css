@@ -86,7 +86,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.2rem;
-    padding: 4rem 0;
   }
 
   .OurWorkItem p {
@@ -94,11 +93,15 @@
   }
 
   .OurWork h2 {
-    margin-bottom: 2.4rem;
+    margin-bottom: 6.4rem;
   }
 
   .OurWork > div:has(h2) h2 {
     flex-direction: row;
     gap: 2.4rem;
+  }
+
+  .OurWorkGrid + a {
+    margin-top: 8rem;
   }
 }

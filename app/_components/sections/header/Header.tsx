@@ -3,29 +3,54 @@ import { useEffect, useRef, useState } from "react";
 import LogoWhite from "../../svg/LogoWhite";
 import Menu from "../../ui/menu/Menu";
 import styles from "./Header.module.css";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [logoColor, setLogoColor] = useState<"black" | "white">("white");
   const lastScrollY = useRef<number>(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const isAnimatedDone =
-    typeof window !== "undefined" &&
-    sessionStorage.getItem("animationDone") === "true";
+  const observerRef = useRef<IntersectionObserver | null>(null);
+  const headerMounted = useRef(true);
+  const pathname = usePathname();
 
+  // Check if animation is already done when component mounts
   useEffect(() => {
-    if (isAnimatedDone) {
-      setIsVisible(true);
-    } else {
-      timeoutRef.current = setTimeout(() => {
-        setIsVisible(true);
-      }, 5500);
-    }
+    // Initialize header state based on animation status
+    const checkAnimationStatus = () => {
+      if (typeof window !== "undefined") {
+        try {
+          const animationDone =
+            sessionStorage?.getItem("animationDone") === "true";
+          if (animationDone) {
+            setIsVisible(true);
+          } else {
+            // Animation not done yet, show header after animation duration
+            timeoutRef.current = setTimeout(() => {
+              if (headerMounted.current) {
+                setIsVisible(true);
+              }
+            }, 5500);
+          }
+        } catch (err) {
+          console.error("Error accessing sessionStorage:", err);
+          // Default to showing header if storage access fails
+          setIsVisible(true);
+        }
+      }
+    };
 
+    checkAnimationStatus();
+
+    // Set up scroll handling - header visibility based on scroll direction
     const handleScroll = () => {
+      if (typeof window === "undefined" || !headerMounted.current) return;
+
+      // Show header when scrolling up, hide when scrolling down
       if (window.scrollY < lastScrollY.current) {
         setIsVisible(true);
-      } else {
+      } else if (window.scrollY > 100) {
+        // Add threshold to prevent hiding on small scrolls
         setIsVisible(false);
 
         if (timeoutRef.current) {
@@ -35,37 +60,59 @@ const Header = () => {
       lastScrollY.current = window.scrollY;
     };
 
-    lastScrollY.current = window.scrollY;
-    window.addEventListener("scroll", handleScroll);
+    if (typeof window !== "undefined") {
+      lastScrollY.current = window.scrollY;
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    // Cleanup function
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      headerMounted.current = false;
+
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", handleScroll);
+      }
+
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [isAnimatedDone]);
+  }, []);
 
+  // Set up observer to change logo color based on section background
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
+    // if (typeof window === "undefined" || !headerMounted.current) return;
 
-    const observer = new IntersectionObserver(
+    const sections = document.querySelectorAll("section");
+    if (sections.length === 0) return;
+
+    // Create intersection observer for sections
+    observerRef.current = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const bgColor = entry.target.getAttribute("data-bg");
+            console.log(bgColor, "bgColor");
             setLogoColor(bgColor === "dark" ? "white" : "black");
           }
         });
       },
-      { root: null, threshold: 0 }
+      { root: null, threshold: 0.1 } // Lower threshold to detect sections sooner
     );
 
-    sections.forEach((section) => observer.observe(section));
+    // Observe all sections
+    sections.forEach((section) => observerRef.current?.observe(section));
 
+    // Cleanup function
     return () => {
-      sections.forEach((section) => observer.unobserve(section));
+      if (observerRef.current) {
+        sections.forEach((section) => {
+          observerRef.current?.unobserve(section);
+        });
+        observerRef.current.disconnect();
+      }
     };
-  }, []);
+  }, [pathname]);
 
   return (
     <header
@@ -74,7 +121,12 @@ const Header = () => {
       } ${isVisible ? styles.visible : ""}`}
     >
       <div className="container">
-        <LogoWhite logoColor={logoColor} />
+        <LogoWhite
+          logoColor={logoColor}
+          onHeaderHide={() => {
+            setIsVisible(false);
+          }}
+        />
         <Menu color={logoColor} />
       </div>
     </header>
