@@ -8,7 +8,7 @@
 }
 
 .Hero svg {
-  max-width: 240px;
+  max-width: 160px;
 }
 
 .LogoContainer {
@@ -41,7 +41,7 @@
 }
 
 .Hero h1 {
-  font-size:  clamp(7.5rem, 13.636vw + 4.432rem, 15rem);
+  font-size: clamp(4.5rem, 19.091vw + 0.205rem, 15rem);
   display: flex;
   width: 100%;
   justify-content: flex-start;

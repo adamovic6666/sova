@@ -16,10 +16,12 @@
   max-width: 85dvw;
   line-height: 200%;
   position: relative;
+  margin-bottom: 1.6rem;
 }
 
 .WhoWeAre p:last-of-type {
   margin-top: 2.4rem;
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {

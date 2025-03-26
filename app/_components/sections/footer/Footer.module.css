@@ -19,10 +19,20 @@
   gap: 0.8rem;
 }
 
+.FooterContent * {
+  font-size: 1.4rem;
+}
+
 .FooterContent span,
 .FooterContent p,
 .FooterContent a {
   color: var(--text-secondary);
+}
+
+@media (min-width: 360px) {
+  .FooterContent * {
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 768px) {
