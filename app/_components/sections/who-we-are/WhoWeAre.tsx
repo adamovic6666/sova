@@ -1,11 +1,20 @@
+"use client";
 import React from "react";
 import styles from "./WhoWeAre.module.css";
 import Title from "../../title/Title";
 import Wave from "../../wave/Wave";
+import { usePathname } from "next/navigation";
 
 const WhoWeAre = () => {
+  const pathName = usePathname();
+  const isAboutUsPage = pathName === "/about-us";
   return (
-    <section className={`panel ${styles.WhoWeAre}`} data-bg="white">
+    <section
+      className={`panel ${styles.WhoWeAre} ${
+        isAboutUsPage ? styles.WhoWeAreExpanded : ""
+      }`}
+      data-bg="white"
+    >
       <Wave bgColor="#131313" />
       <div className={`container`}>
         <Title tag="h2" flex="column">

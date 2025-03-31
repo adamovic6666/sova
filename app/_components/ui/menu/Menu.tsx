@@ -8,11 +8,7 @@ import Instagram from "../../svg/Instagram";
 import Facebook from "../../svg/Facebook";
 import { usePathname } from "next/navigation";
 
-const Menu = ({
-  color,
-}: {
-  color: "black" | "white";
-}) => {
+const Menu = ({ color }: { color: "black" | "white" }) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [hovered, setHovered] = useState<string>("");
   const pathname = usePathname();
@@ -22,6 +18,11 @@ const Menu = ({
       setHovered(pathname);
     }
   }, [pathname]);
+
+  const closeMenuAndEnableScroll = () => {
+    setOpenMenu(false);
+    document.body.style.overflow = "auto";
+  };
 
   return (
     <div>
@@ -52,6 +53,7 @@ const Menu = ({
             <Link
               href="/about-us"
               onMouseEnter={() => setHovered("/about-us")}
+              onClick={closeMenuAndEnableScroll}
               className={`${hovered === "/about-us" ? styles.active : ""}
             ${!!hovered && hovered !== "/about-us" ? styles.notActive : ""}`}
               onMouseLeave={() => setHovered("")}
@@ -61,6 +63,7 @@ const Menu = ({
             <span>Your</span>
             <Link
               href="/our-work"
+              onClick={closeMenuAndEnableScroll}
               onMouseEnter={() => setHovered("/our-work")}
               className={`${hovered === "/our-work" ? styles.active : ""} ${
                 !!hovered && hovered !== "/our-work" ? styles.notActive : ""
@@ -73,10 +76,7 @@ const Menu = ({
 
             <Link
               href="/contact-us"
-              onClick={() => {
-                setOpenMenu(false);
-                document.body.style.overflow = "auto";
-              }}
+              onClick={closeMenuAndEnableScroll}
               onMouseEnter={() => setHovered("/contact-us")}
               className={`${hovered === "/contact-us" ? styles.active : ""} ${
                 !!hovered && hovered !== "/contact-us" ? styles.notActive : ""

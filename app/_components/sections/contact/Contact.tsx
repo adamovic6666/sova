@@ -1,15 +1,25 @@
+"use client";
 import React from "react";
 import Title from "../../title/Title";
 import styles from "./Contact.module.css";
-// import ContactForm from "../../forms/contact-form/ContactForm";
 import CompanyDetails from "../../company-details/CompanyDetails";
 import Wave from "../../wave/Wave";
-import Footer from "../footer/Footer";
 import ContactForm from "../../forms/contact-form/ContactForm";
+import { usePathname } from "next/navigation";
 
 const Contact = () => {
+  const pathName = usePathname();
+  const isContactPage = pathName === "/contact-us";
+  const isMainPage = pathName === "/";
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const showContacForm = isContactPage || (isMainPage && !isMobile);
   return (
-    <section className={`panel ${styles.Contact}`} data-bg="white">
+    <section
+      className={`panel ${styles.Contact} ${
+        isContactPage ? styles.ContactExpanded : ""
+      }`}
+      data-bg="white"
+    >
       <Wave bgColor="#fff" />
       <div className={`container ${styles.ContactGrid}`}>
         <div className="sticky">
@@ -25,11 +35,10 @@ const Contact = () => {
           together!
         </p>
         <div className={styles.ContactContent}>
-          <ContactForm />
+          {showContacForm && <ContactForm />}
           <CompanyDetails />
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

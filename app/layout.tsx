@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./_components/sections/header/Header";
+import Footer from "./_components/sections/footer/Footer";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ const RootLayout = ({
       <body className={`${openSans.variable} ${myFont.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

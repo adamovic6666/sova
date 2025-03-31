@@ -6,6 +6,10 @@
   border-top: 1px solid var(--who-we-are);
 }
 
+.WhoWeAreExpanded {
+  padding: 12rem 0 24rem;
+}
+
 .WhoWeAre h2 {
   margin-bottom: 6.4rem;
   -webkit-text-stroke: 1px #fff;
@@ -27,6 +31,10 @@
 @media (min-width: 768px) {
   .WhoWeAre {
     padding: 12rem 0 24rem;
+  }
+
+  .WhoWeAreExpanded {
+    padding: 16rem 0 24rem;
   }
 
   .WhoWeAre p {

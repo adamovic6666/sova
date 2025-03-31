@@ -33,6 +33,8 @@ export default function useGsapScroll() {
               : "bottom bottom",
           pin: true,
           pinSpacing: false,
+          fastScrollEnd: true,
+          preventOverlaps: true,
         });
 
         scrollTriggers.current.push(trigger);

@@ -32,7 +32,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <main className="main-content">
       <Hero />
       <WhoWeAre />
       <OurWork />

@@ -10,6 +10,10 @@
   width: 100%;
 }
 
+.OurWorkExpanded {
+  padding: 8rem 0 12rem;
+}
+
 .OurWorkContainer {
   background-color: var(--color-bg-light);
   z-index: 10;
@@ -80,6 +84,14 @@
 @media (min-width: 768px) {
   .OurWork {
     padding: 12rem 0 16rem;
+  }
+
+  .OurWork h2 {
+    -webkit-text-stroke: 2.5px var(--text-primary);
+  }
+
+  .OurWorkExpanded {
+    padding: 16rem 0 24rem;
   }
 
   .OurWorkGrid {
