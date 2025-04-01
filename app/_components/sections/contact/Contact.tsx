@@ -6,13 +6,16 @@ import CompanyDetails from "../../company-details/CompanyDetails";
 import Wave from "../../wave/Wave";
 import ContactForm from "../../forms/contact-form/ContactForm";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Contact = () => {
   const pathName = usePathname();
   const isContactPage = pathName === "/contact-us";
+  const isOurWorkPage = pathName === "/our-work";
   const isMainPage = pathName === "/";
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-  const showContacForm = isContactPage || (isMainPage && !isMobile);
+  const showContacForm =
+    isContactPage || isOurWorkPage || (isMainPage && !isMobile);
   return (
     <section
       className={`panel ${styles.Contact} ${
@@ -37,6 +40,11 @@ const Contact = () => {
         <div className={styles.ContactContent}>
           {showContacForm && <ContactForm />}
           <CompanyDetails />
+        </div>
+        <div className={styles.FooterContent}>
+          <p>© 2025 Sova Creative Studio</p>
+          <span>|</span>
+          <Link href="/privacy-notice">Privacy Notice</Link>
         </div>
       </div>
     </section>

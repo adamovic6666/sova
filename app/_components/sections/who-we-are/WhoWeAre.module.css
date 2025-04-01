@@ -6,8 +6,12 @@
   border-top: 1px solid var(--who-we-are);
 }
 
-.WhoWeAreExpanded {
-  padding: 12rem 0 24rem;
+.Anchor {
+  position: absolute;
+  top: -4rem;
+  width: 100%;
+  height: 2px;
+  visibility: hidden;
 }
 
 .WhoWeAre h2 {
@@ -29,12 +33,12 @@
 }
 
 @media (min-width: 768px) {
-  .WhoWeAre {
-    padding: 12rem 0 24rem;
+  .Anchor {
+    top: 4rem;
   }
 
-  .WhoWeAreExpanded {
-    padding: 16rem 0 24rem;
+  .WhoWeAre {
+    padding: 12rem 0 24rem;
   }
 
   .WhoWeAre p {

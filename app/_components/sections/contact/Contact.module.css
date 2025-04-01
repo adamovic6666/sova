@@ -1,6 +1,6 @@
 .Contact {
   background-color: var(--color-bg-white);
-  padding: 6.4rem 0 8rem;
+  padding: 6.4rem 0 2.4rem;
   position: relative;
   border-top: 1px solid var(--color-bg-white);
   display: flex;
@@ -46,9 +46,23 @@
   margin-top: 6.4rem;
 }
 
+.FooterContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-top: 2.4rem;
+  justify-content: space-between;
+}
+
+.FooterContent * {
+  color: var(--text-primary-light);
+  font-size: min(4vw, 1.6rem);
+}
+
 @media (min-width: 768px) {
   .Contact {
-    padding: 12rem 0;
+    padding: 12rem 0 4rem;
   }
 
   .Contact h2 {
@@ -81,5 +95,19 @@
 
   .ContactContent > div {
     width: 40%;
+  }
+
+  .FooterContent {
+    padding-top: 2.4rem;
+    border-top: 1px solid var(--color-grey);
+    margin-top: 6.4rem;
+  }
+
+  .FooterContent span {
+    display: none;
+  }
+
+  .FooterContent * {
+    color: var(--text-primary);
   }
 }

@@ -51,7 +51,7 @@ const Menu = ({ color }: { color: "black" | "white" }) => {
             <span>Make</span>
 
             <Link
-              href="/about-us"
+              href="/#about-us"
               onMouseEnter={() => setHovered("/about-us")}
               onClick={closeMenuAndEnableScroll}
               className={`${hovered === "/about-us" ? styles.active : ""}
