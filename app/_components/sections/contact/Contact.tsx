@@ -11,11 +11,9 @@ import Link from "next/link";
 const Contact = () => {
   const pathName = usePathname();
   const isContactPage = pathName === "/contact-us";
-  const isOurWorkPage = pathName === "/our-work";
-  const isMainPage = pathName === "/";
+
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-  const showContacForm =
-    isContactPage || isOurWorkPage || (isMainPage && !isMobile);
+  const showContacForm = (isContactPage && isMobile) || !isMobile;
   return (
     <section
       className={`panel ${styles.Contact} ${

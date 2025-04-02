@@ -55,7 +55,7 @@
 
 @media (min-width: 768px) {
   .Hero h1 {
-    -webkit-text-stroke: 2.2px var(--color-bg-light);
+    -webkit-text-stroke: 2.5px var(--color-bg-light);
     margin-top: -3.2rem;
   }
 

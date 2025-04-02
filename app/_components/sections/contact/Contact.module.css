@@ -9,7 +9,7 @@
 }
 
 .ContactExpanded {
-  padding: 12rem 0 0;
+  padding: 14.4rem 0 2.4rem;
 }
 
 .ContactGrid {
@@ -70,7 +70,7 @@
   }
 
   .ContactExpanded {
-    padding: 16rem 0 8rem;
+    padding: 16rem 0 4rem;
   }
 
   .Contact h3 {
