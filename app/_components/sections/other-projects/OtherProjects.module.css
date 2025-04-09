@@ -1,0 +1,79 @@
+.OtherProjects {
+  background-color: var(--color-bg-light);
+  padding: 5.6rem 0 10.4rem;
+  position: relative;
+  border-top: 1px solid var(--color-bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.OtherProjectsExpanded {
+  padding: 12rem 0 2.4rem;
+}
+
+.OtherProjectsContainer {
+  background-color: var(--color-bg-light);
+  z-index: 10;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.OtherProjects h2 {
+  margin-bottom: 6.4rem;
+  text-align: left;
+}
+
+.OtherProjectsItem {
+  width: 100%;
+}
+
+.OtherProjectsItem a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-primary);
+}
+
+.OtherProjectsItem a:hover span:nth-of-type(1) {
+  opacity: 0.75;
+}
+
+.OtherProjectsItem a span:nth-of-type(1) {
+  font-weight: 800;
+  font-family: var(--font-open-sans);
+  text-transform: uppercase;
+  font-size: clamp(2.8rem, 2.5vw, 3.6rem);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.OtherProjectsContainer > a {
+  margin-top: 2.4rem;
+  margin-left: auto;
+  width: fit-content;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .OtherProjects {
+    padding: 12rem 0 16rem;
+  }
+
+  .OtherProjects h2 {
+    -webkit-text-stroke: 2.5px var(--text-primary);
+    margin-bottom: 8rem;
+  }
+
+  .OtherProjectsExpanded {
+    padding: 16rem 0 24rem;
+  }
+
+  .OtherProjectsContainer > a {
+    margin-top: 4rem;
+  }
+}

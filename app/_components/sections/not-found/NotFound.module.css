@@ -64,6 +64,7 @@
 @media (min-width: 768px) {
   .NotFound h1 {
     flex-direction: row;
+    -webkit-text-stroke: 2.5px var(--color-bg-light);
   }
 
   .NotFound > div a {

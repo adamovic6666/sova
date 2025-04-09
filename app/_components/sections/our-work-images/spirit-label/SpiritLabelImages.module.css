@@ -1,0 +1,28 @@
+.SpiritLabelImages {
+  padding-bottom: 16rem;
+}
+
+.Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+  gap: 4rem;
+}
+
+.Flex > div {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.Double > div {
+  aspect-ratio: 1/2;
+}
+
+.Triple > div {
+  aspect-ratio: 1/1;
+}

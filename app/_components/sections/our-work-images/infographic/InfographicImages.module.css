@@ -1,0 +1,25 @@
+.InfographicImages {
+  padding-bottom: 16rem;
+}
+
+.InfographicImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.InfographicImages .InfographicImageContainer:nth-of-type(1) {
+  aspect-ratio: 2 / 3;
+}
+
+.InfographicImages .InfographicImageContainer:nth-of-type(2) {
+  aspect-ratio: 2 / 3;
+}
+
+.InfographicImages .InfographicImageContainer:nth-of-type(3) {
+  aspect-ratio: 4 / 3;
+}

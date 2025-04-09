@@ -1,0 +1,60 @@
+.OurSingleWorkHero {
+  background-color: var(--color-bg-white);
+  padding: 6.4rem 0 2.4rem;
+  position: relative;
+  border-top: 1px solid var(--color-bg-white);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* min-height: 100dvh; */
+}
+
+.OurSingleWorkHero h1 {
+  font-size: clamp(4.5rem, 19.091vw + 0.205rem, 15rem);
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  z-index: 1;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #000;
+  color: transparent;
+  font-weight: 800;
+  margin-bottom: 2.4rem;
+}
+
+.OurSingleWorkHero h3 {
+  line-height: 1.1;
+  max-width: 80rem;
+  margin-bottom: 2.4rem;
+}
+
+.OurSingleWorkHeroClient {
+  margin-bottom: 0.8rem;
+  font-family: var(--font-georgia-pro);
+  color: var(--text-primary);
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .OurSingleWorkHero {
+    padding: 12rem 0 10.4rem;
+  }
+
+  .OurSingleWorkHeroExtended {
+    padding: 12rem 0 20rem;
+  }
+
+  .OurSingleWorkHero h1 {
+    -webkit-text-stroke: 2.5px #000;
+    margin-bottom: 3.2rem;
+  }
+
+  .OurSingleWorkHeroClient {
+    margin-bottom: 1.6rem;
+  }
+
+  .OurSingleWorkHero h3 {
+    line-height: 1.1;
+    margin-bottom: 4rem;
+  }
+}

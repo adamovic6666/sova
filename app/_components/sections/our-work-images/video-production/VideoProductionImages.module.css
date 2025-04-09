@@ -1,0 +1,40 @@
+.VideoProductionImages {
+  padding-bottom: 16rem;
+}
+
+.BgImageFull,
+.MainImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 4rem;
+}
+
+.MainImageContainer {
+  aspect-ratio: 16 / 9;
+}
+
+.BgImageFull {
+  aspect-ratio: 1 / 3;
+}
+
+.VideoEmbed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 4rem;
+}
+
+.VideoEmbed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/55f058d34fa2ce0e6894aff024538d34?family=VAGRoundedLTPro-Light);
+
 :root {
   --color-grey: #d4d4d4;
   --color-bg-white: #fff;
@@ -111,6 +113,115 @@ h3 {
   color: var(--color-bg-light) !important;
   background-color: var(--color-bg-dark) !important;
   box-shadow: none;
+}
+
+.st0 {
+  fill: #1a1a18;
+}
+.st1 {
+  font-family: "VAGRoundedLTPro-Light";
+}
+.st2 {
+  font-size: 11.989px;
+}
+.st3 {
+  fill: #ffffff;
+}
+.st4 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #ffffff;
+}
+
+.stt0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #b0a18b;
+}
+.stt1 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #eae0c7;
+}
+.stt2 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #ffffff;
+}
+
+.stt3 {
+  clip-path: url(#SVGID_00000005257980864455253910000014532479992940977850_);
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #ffffff;
+}
+.stt4 {
+  clip-path: url(#SVGID_00000005257980864455253910000014532479992940977850_);
+}
+
+.stt5 {
+  clip-path: url(#SVGID_00000116919310931313028230000012947448005238207366_);
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #db415d;
+}
+
+.stt6 {
+  clip-path: url(#SVGID_00000005257980864455253910000014532479992940977850_);
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #d9dada;
+}
+
+.stt7 {
+  clip-path: url(#SVGID_00000031890727171789249970000012046248115921382277_);
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #f9d2e5;
+}
+.stt8 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #a7d3ae;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 3.2rem !important;
+  z-index: 10 !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgb(187, 187, 187) !important;
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+  margin: 0 0.8rem !important;
+  cursor: pointer !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+  opacity: 1 !important;
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,79 @@
+.IdentityImages {
+  padding-bottom: 40rem;
+}
+
+.IdentityImagesBottom {
+  padding-bottom: 0;
+  background-color: #00aae6;
+}
+
+.IdentityImagesBottomWrapper {
+  transform: translateY(-36rem);
+}
+
+.DesktopImageContainer,
+.MainImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.MainImageContainer {
+  aspect-ratio: 16 / 9;
+  margin-bottom: 4rem;
+}
+
+.IdentityImagesBottom .MainImageContainer {
+  margin-bottom: 8rem;
+}
+
+.IdentityImagesBottom .MainImageContainer:nth-of-type(4) {
+  margin-bottom: 0;
+}
+
+.DesktopImageContainer {
+  max-width: 1920px;
+  margin: 0 auto;
+  aspect-ratio: 24 / 9;
+  margin-bottom: 8rem;
+}
+
+.FlexBottom,
+.Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.Flex {
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.FlexBottom {
+  gap: 8rem;
+  margin-bottom: 8rem;
+}
+
+.FlexBottom > div,
+.Flex > div {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.Flex > div {
+  aspect-ratio: 1 / 1;
+}
+
+.FlexBottom > div {
+  aspect-ratio: 3 / 6;
+}

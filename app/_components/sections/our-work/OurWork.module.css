@@ -74,10 +74,35 @@
   height: auto;
   position: relative;
   aspect-ratio: 2 / 1;
+  overflow: hidden;
 }
 
 .OurWorkGrid + a {
   margin-top: 4rem;
+}
+
+.OurWorkItem a {
+  text-decoration: none;
+  color: #000;
+  line-height: 1.5;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.OurWorkItem img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.OurWorkItem a h3:hover {
+  color: var(--text-primary);
+}
+
+.OurWorkItem a img:hover {
+  transform: scale(1.05);
+}
+
+.OurWorkItem a + p {
+  padding-bottom: 1.6rem;
 }
 
 /* Larger screens */

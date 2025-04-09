@@ -30,7 +30,6 @@ const RootLayout = ({
     <html lang="en">
       <body className={`${openSans.variable} ${myFont.variable}`}>
         <Header />
-
         {children}
       </body>
     </html>

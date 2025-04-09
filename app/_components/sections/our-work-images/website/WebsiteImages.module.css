@@ -1,0 +1,46 @@
+.WebsiteImages {
+  padding-bottom: 8rem;
+  background-color: #333;
+}
+
+.WebsiteImages > div {
+  transform: translateY(-16rem);
+}
+
+.MainImage {
+  width: 100%;
+  aspect-ratio: 7 / 3;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 8rem;
+}
+
+.MainImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 4rem;
+}
+
+.Flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+  gap: 4rem;
+}
+
+.Flex > div {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 2 / 4;
+}
