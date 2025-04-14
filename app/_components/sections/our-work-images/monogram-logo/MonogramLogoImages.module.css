@@ -2,6 +2,7 @@
   padding-bottom: 16rem;
 }
 
+.MainImageContainerBottom,
 .MainImageContainer {
   display: flex;
   justify-content: center;
@@ -9,8 +10,15 @@
   width: 100%;
   height: auto;
   position: relative;
-  aspect-ratio: 16 / 9;
   margin-bottom: 4rem;
+}
+
+.MainImageContainer {
+  aspect-ratio: 16 / 9;
+}
+
+.MainImageContainerBottom {
+  aspect-ratio: 1.5/ 1;
 }
 
 .Flex {

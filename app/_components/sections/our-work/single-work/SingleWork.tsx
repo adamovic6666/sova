@@ -30,7 +30,6 @@ const SingleWork = ({
   project,
   otherProjects,
   title,
-  panel,
 }: {
   pageTitle?: string[];
   sectionTitle?: string;
@@ -38,7 +37,6 @@ const SingleWork = ({
   project?: string;
   otherProjects: OurWork[];
   title?: string;
-  panel?: boolean;
 }) => {
   useGsapScroll();
   return (
@@ -48,7 +46,6 @@ const SingleWork = ({
         sectionTitle={sectionTitle}
         sectionText={sectionText}
         project={project}
-        panel={panel}
       />
       {title === "Content strategy" && <ContentStrategyImages />}
       {title === "Add campaign" && <AddCampaignImages />}

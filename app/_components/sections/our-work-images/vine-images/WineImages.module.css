@@ -1,10 +1,10 @@
 .WineImages {
   background-color: #bea794;
-  margin-top: 16rem;
+  padding-bottom: 8rem;
 }
 
 .WineImages > div {
-  transform: translateY(-24rem);
+  transform: translateY(-8rem);
 }
 
 .MainImageContainer {
@@ -14,7 +14,18 @@
   width: 100%;
   height: auto;
   position: relative;
-  aspect-ratio: 6 / 3;
+  aspect-ratio: 1.95 / 1;
+  max-width: 1920px;
+}
+
+.MainImageContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: #fff;
 }
 
 .MainImageContainer img {
@@ -28,43 +39,32 @@
   grid-template-rows: repeat(10, auto);
   max-width: 920px;
   margin: 0 auto;
-  transform: translateY(-8rem);
 }
 
 .ImagesContainerGrid > div:nth-of-type(1) {
   grid-area: 2 / 1 / 4 / 2;
   aspect-ratio: 1/1;
-  border: 2px solid #ffff00;
-  border-right: none;
 }
 .ImagesContainerGrid > div:nth-of-type(2) {
   grid-area: 1 / 2 / 5 / 3;
   aspect-ratio: 1/ 2;
-  border: 2px solid #ffff00;
 }
 .ImagesContainerGrid > div:nth-of-type(3) {
   grid-area: 4 / 1 / 8 / 2;
   aspect-ratio: 1/ 2;
-  border-left: 2px solid #ffff00;
-  border-bottom: 2px solid #ffff00;
 }
 .ImagesContainerGrid > div:nth-of-type(4) {
   grid-area: 5 / 2 / 7 / 3;
   aspect-ratio: 1/1;
-  border: 2px solid #ffff00;
-  border-top: none;
 }
 .ImagesContainerGrid > div:nth-of-type(5) {
   grid-area: 8 / 1 / 10 / 2;
   aspect-ratio: 1/1;
-  border-left: 2px solid #ffff00;
-  border-bottom: 2px solid #ffff00;
 }
+
 .ImagesContainerGrid > div:nth-of-type(6) {
   grid-area: 7 / 2 / 11 / 3;
   aspect-ratio: 1/ 2;
-  border: 2px solid #ffff00;
-  border-top: none;
 }
 
 .ImagesContainerGrid > div {
@@ -73,4 +73,20 @@
   height: auto;
   position: relative;
   overflow: hidden;
+}
+
+.Wine {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

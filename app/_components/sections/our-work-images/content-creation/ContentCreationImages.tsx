@@ -33,24 +33,24 @@ const ContentCreationImages = () => {
               }}
             >
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/sc-swiper-1.jpg"} alt="Content Creation" fill />
+                <Image src={"/sc-swiper-2.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/sc-swiper-2.jpg"} alt="Content Creation" fill />
+                <Image src={"/sc-swiper-3.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/sc-swiper-3.jpg"} alt="Content Creation" fill />
+                <Image src={"/sc-swiper-4.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/sc-swiper-4.jpg"} alt="Content Creation" fill />
+                <Image src={"/sc-swiper-1.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
             </Swiper>
           </div>
           <div>
-            <Image src={"/sc-4.jpg"} alt="Content Creation" fill />
+            <Image src={"/sc-3.jpg"} alt="drustvene-mreze" fill />
           </div>
           <div>
-            <Image src={"/sc-4.jpg"} alt="Content Creation" fill />
+            <Image src={"/sc-4.jpg"} alt="drustvene-mreze" fill />
           </div>
         </div>
         <div className={styles.ContentCreationGridBottom}>
@@ -66,27 +66,27 @@ const ContentCreationImages = () => {
               }}
             >
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/swiper-sc-5.jpg"} alt="Content Creation" fill />
+                <Image src={"/swiper-sc-6.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/swiper-sc-6.jpg"} alt="Content Creation" fill />
+                <Image src={"/swiper-sc-7.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/swiper-sc-7.jpg"} alt="Content Creation" fill />
+                <Image src={"/swiper-sc-8.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/swiper-sc-8.jpg"} alt="Content Creation" fill />
+                <Image src={"/swiper-sc-5.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
             </Swiper>
           </div>
           <div>
-            <Image src={"/sc-6.jpg"} alt="Content Creation" fill />
+            <Image src={"/sc-6.jpg"} alt="drustvene-mreze" fill />
           </div>
           <div>
-            <Image src={"/sc-7.jpg"} alt="Content Creation" fill />
+            <Image src={"/sc-7.jpg"} alt="drustvene-mreze" fill />
           </div>
           <div>
-            <Image src={"/sc-8.jpg"} alt="Content Creation" fill />
+            <Image src={"/sc-8.jpg"} alt="drustvene-mreze" fill />
           </div>
         </div>
       </div>

@@ -7,7 +7,12 @@ const VideoProductionImages = () => {
     <div className={styles.VideoProductionImages}>
       <div className="container">
         <div className={styles.MainImageContainer}>
-          <Image src="/arcelor-mittal-1.jpg" alt="laptop-image" fill={true} />
+          <Image
+            src="/arcelor-mittal-1.jpg"
+            alt="video-production"
+            fill={true}
+            quality={100}
+          />
         </div>
         <div className={styles.VideoEmbed}>
           <iframe
@@ -20,7 +25,12 @@ const VideoProductionImages = () => {
           ></iframe>
         </div>
         <div className={styles.BgImageFull}>
-          <Image src="/arcelor-mittal-2.jpg" alt="laptop-image" fill={true} />
+          <Image
+            src="/arcelor-mittal-2.jpg"
+            alt="video-production"
+            fill={true}
+            quality={100}
+          />
         </div>
       </div>
     </div>

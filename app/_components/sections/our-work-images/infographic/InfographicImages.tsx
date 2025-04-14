@@ -6,13 +6,28 @@ const InfographicImages = () => {
     <div className={`${styles.InfographicImages} panel`}>
       <div className="container">
         <div className={styles.InfographicImageContainer}>
-          <Image src="/infografik-1.jpg" alt="main-image" fill={true} />
+          <Image
+            src="/infografik-1.jpg"
+            alt="infografik-dizajn"
+            fill
+            quality={100}
+          />
         </div>
         <div className={styles.InfographicImageContainer}>
-          <Image src="/infografik-2.jpg" alt="main-image" fill={true} />
+          <Image
+            src="/infografik-2.jpg"
+            alt="infografik-dizajn"
+            fill
+            quality={100}
+          />
         </div>
         <div className={styles.InfographicImageContainer}>
-          <Image src="/infografik-3.jpg" alt="main-image" fill={true} />
+          <Image
+            src="/infografik-3.jpg"
+            alt="infografik-dizajn"
+            fill
+            quality={100}
+          />
         </div>
       </div>
     </div>

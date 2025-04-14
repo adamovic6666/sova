@@ -7,18 +7,15 @@ const LogoAndPackagingImages = () => {
     <div className={styles.LogoAndPackagingImages}>
       <div className="container">
         <div className={styles.MainImageContainer}>
-          <Image src="/vabo-1.jpg" alt="main-image" fill={true} />
+          <Image src="/vabo-1.jpg" alt="dizajn-logotipa" fill quality={100} />
         </div>
         <div className={styles.MainImageContainer}>
-          <Image src="/vabo-2.jpg" alt="main-image" fill={true} />
+          <Image src="/vabo-2.jpg" alt="dizajn-logotipa" fill quality={100} />
         </div>
       </div>
       <div className="panel">
         <div className={styles.FullWidthBackground}>
           <div className={styles.ImageOne} />
-          <div className={styles.ImageTwo} />
-          <div className={styles.ImageThree} />
-          <div className={styles.ImageFour} />
         </div>
       </div>
     </div>

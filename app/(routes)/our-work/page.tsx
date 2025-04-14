@@ -1,16 +1,11 @@
-"use client";
-import Contact from "@/app/_components/sections/contact/Contact";
-import OurWork from "@/app/_components/sections/our-work/OurWork";
-import useGsapScroll from "@/app/_hooks/useGsapScroll";
+import OurWorkPageContent from "@/app/_components/sections/our-work/page-content/OurWorkPageContent";
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Our Work | Sova Creative Studio",
+  description:
+    "Explore our work at Sova Creative Studio - a showcase of innovative branding, design, and visual communication solutions for global brands and local startups",
+};
 
 export default function OurWorkPage() {
-  // Apply GSAP animations
-  useGsapScroll();
-
-  return (
-    <main className="main-content">
-      <OurWork />
-      <Contact />
-    </main>
-  );
+  return <OurWorkPageContent />;
 }

@@ -1,10 +1,21 @@
 .ContentStrategyImages {
   background-color: #abacb3;
-  margin-top: 16rem;
+}
+
+.ContentStrategyImages::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 28rem;
+  background-color: #ffffff;
+  z-index: 1;
 }
 
 .ContentStrategyImages > div {
-  transform: translateY(-32rem);
+  z-index: 2;
+  transform: translateY(-28rem);
 }
 
 .ImagesContainerGridOddWrapper {
@@ -18,7 +29,9 @@
   width: 100%;
   height: auto;
   position: relative;
-  aspect-ratio: 5 / 3;
+  aspect-ratio: 1.5 / 1;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .MainImageContainer img {
@@ -31,7 +44,7 @@
   display: grid;
   grid-template-columns: repeat(2, autos);
   grid-template-rows: repeat(15, auto);
-  max-width: 640px;
+  max-width: 580px;
   gap: 4rem;
   margin: 0 auto;
 }

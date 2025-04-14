@@ -32,21 +32,13 @@ const OurWork = () => {
           ({ image, alt, title, project, link }) => (
             <article key={image} className={styles.OurWorkItem}>
               <div>
-                {isOurWorkPage ? (
-                  <Link href={`/our-work/${link}`}>
-                    <Image src={image} alt={alt} fill={true} />
-                  </Link>
-                ) : (
-                  <Image src={image} alt={alt} fill={true} />
-                )}
-              </div>
-              {isOurWorkPage ? (
                 <Link href={`/our-work/${link}`}>
-                  <Title tag="h3">{title}</Title>
+                  <Image src={image} alt={alt} fill={true} />
                 </Link>
-              ) : (
+              </div>
+              <Link href={`/our-work/${link}`}>
                 <Title tag="h3">{title}</Title>
-              )}
+              </Link>
               <p>{project}</p>
             </article>
           )

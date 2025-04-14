@@ -6,21 +6,14 @@ const OurSingleWorkHero = ({
   sectionTitle,
   sectionText,
   project,
-  panel = false,
 }: {
   pageTitle?: string[];
   sectionTitle?: string;
   sectionText?: string;
   project?: string;
-  panel?: boolean;
 }) => {
   return (
-    <section
-      className={`${styles.OurSingleWorkHero} ${
-        panel ? styles.OurSingleWorkHeroExtended : ""
-      } ${panel ? "panel" : ""}`}
-      data-bg="black"
-    >
+    <section className={styles.OurSingleWorkHero} data-bg="black">
       <div className="container">
         <Title tag="h1" flex="column" color="white">
           {pageTitle?.map((word) => (
@@ -29,7 +22,7 @@ const OurSingleWorkHero = ({
         </Title>
         <p>Client: {project}</p>
         <h3>{sectionTitle}</h3>
-        <p>{sectionText}</p>
+        <p dangerouslySetInnerHTML={{ __html: sectionText || "" }}></p>
       </div>
     </section>
   );

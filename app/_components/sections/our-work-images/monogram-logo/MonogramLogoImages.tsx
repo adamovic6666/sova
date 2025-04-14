@@ -7,21 +7,21 @@ const MonogramLogoImages = () => {
     <div className={`${styles.MonogramLogoImages} panel`}>
       <div className="container">
         <div className={styles.MainImageContainer}>
-          <Image src="/toros-img-1.jpg" alt="main-image" fill={true} />
+          <Image src="/toros-img-1.jpg" alt="monogram-logo" fill />
         </div>
         <div className={styles.MainImageContainer}>
-          <Image src="/toros-img-2.jpg" alt="main-image" fill={true} />
+          <Image src="/toros-img-2.jpg" alt="monogram-logo" fill />
         </div>
         <div className={styles.Flex}>
           <div>
-            <Image src="/toros-img-3.jpg" alt="laptop-image" fill={true} />
+            <Image src="/toros-img-3.jpg" alt="monogram-logo" fill />
           </div>
           <div>
-            <Image src="/toros-img-4.jpg" alt="laptop-image" fill={true} />
+            <Image src="/toros-img-4.jpg" alt="logo-color-palette" fill />
           </div>
         </div>
-        <div className={styles.MainImageContainer}>
-          <Image src="/toros-img-5.jpg" alt="main-image" fill={true} />
+        <div className={styles.MainImageContainerBottom}>
+          <Image src="/toros-img-5.jpg" alt="monogram-logo" fill />
         </div>
       </div>
     </div>
