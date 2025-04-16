@@ -15,7 +15,7 @@ const Menu = ({ color }: { color: "black" | "white" }) => {
 
   useEffect(() => {
     if (pathname) {
-      setHovered(pathname);
+      setOpenMenu(false);
     }
   }, [pathname]);
 

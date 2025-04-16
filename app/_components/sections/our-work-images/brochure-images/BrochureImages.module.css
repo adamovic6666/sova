@@ -1,5 +1,5 @@
 .BrochureImages {
-  padding-bottom: 16rem;
+  padding-bottom: 8rem;
 }
 
 .MainImageContainer {
@@ -10,5 +10,14 @@
   height: auto;
   position: relative;
   aspect-ratio: 1.5 / 1;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
+}
+
+@media (min-width: 1024px) {
+  .BrochureImages {
+    padding-bottom: 16rem;
+  }
+  .MainImageContainer {
+    margin-bottom: 4rem;
+  }
 }

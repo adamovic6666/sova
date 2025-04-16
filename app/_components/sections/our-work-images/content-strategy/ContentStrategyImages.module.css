@@ -1,39 +1,52 @@
 .ContentStrategyImages {
   background-color: #abacb3;
+  padding-bottom: 8rem;
 }
 
-.ContentStrategyImages::before {
+.MainImageContainerMobile::before,
+.MainImageContainer::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 28rem;
+  height: 50%;
   background-color: #ffffff;
-  z-index: 1;
 }
 
 .ContentStrategyImages > div {
-  z-index: 2;
-  transform: translateY(-28rem);
+  transform: translateY(-1rem);
 }
 
 .ImagesContainerGridOddWrapper {
   padding: 8rem 0 0;
 }
 
+.MainImageContainerMobile,
 .MainImageContainer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
   position: relative;
-  aspect-ratio: 1.5 / 1;
   max-width: 1920px;
   margin: 0 auto;
 }
 
+.MainImageContainerMobile {
+  aspect-ratio: 1.6 / 1;
+}
+.MainImageContainer {
+  aspect-ratio: 1.5 / 1;
+}
+
+.MainImageContainer {
+  display: none;
+}
+
+.MainImageContainerMobile img,
 .MainImageContainer img {
   width: 100%;
   height: auto;
@@ -45,7 +58,7 @@
   grid-template-columns: repeat(2, autos);
   grid-template-rows: repeat(15, auto);
   max-width: 580px;
-  gap: 4rem;
+  gap: 1.6rem;
   margin: 0 auto;
 }
 
@@ -92,4 +105,33 @@
 .ImagesContainerGridOdd > div:nth-of-type(2) {
   grid-area: 1 / 2 / 6 / 3;
   aspect-ratio: 2 / 3;
+}
+
+@media (min-width: 768px) {
+  .ContentStrategyImages {
+    padding-bottom: 0;
+  }
+
+  .ImagesContainerGridEven,
+  .ImagesContainerGridOdd {
+    gap: 4rem;
+  }
+
+  .ContentStrategyImages > div {
+    transform: translateY(-8rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .ContentStrategyImages > div {
+    transform: translateY(-28rem);
+  }
+
+  .MainImageContainer {
+    display: flex;
+  }
+
+  .MainImageContainerMobile {
+    display: none;
+  }
 }

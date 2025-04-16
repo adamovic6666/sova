@@ -1,5 +1,5 @@
 .PackagingImages {
-  padding-bottom: 16rem;
+  padding-bottom: 8rem;
 }
 
 .MainImageContainer {
@@ -10,5 +10,14 @@
   height: auto;
   position: relative;
   aspect-ratio: 3/ 2;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
+}
+
+@media (min-width: 1024px) {
+  .MainImageContainer {
+    margin-bottom: 4rem;
+  }
+  .PackagingImages {
+    padding-bottom: 16rem;
+  }
 }

@@ -133,12 +133,14 @@
     margin-bottom: 6.4rem;
   }
 
+  .OurWorkGrid + a {
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
   .OurWork > div:has(h2) h2 {
     flex-direction: row;
     gap: 2.4rem;
-  }
-
-  .OurWorkGrid + a {
-    margin-top: 8rem;
   }
 }

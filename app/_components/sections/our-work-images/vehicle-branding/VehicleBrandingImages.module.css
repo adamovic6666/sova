@@ -1,5 +1,5 @@
 .VehicleBrandingImages {
-  padding-bottom: 16rem;
+  padding-bottom: 8rem;
 }
 
 .MainImageContainer {
@@ -10,7 +10,7 @@
   height: auto;
   position: relative;
   aspect-ratio: 3 / 2;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
 }
 
 .FullWidthImage {
@@ -22,7 +22,7 @@
   position: relative;
   aspect-ratio: 3 / 2;
   max-width: 1920px;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
 }
 
 .ImagesContainerGrid {
@@ -30,7 +30,7 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   margin: 0 auto;
-  gap: 4rem;
+  gap: 1.6rem;
 }
 
 .ImagesContainerGrid > div:nth-of-type(1) {
@@ -53,4 +53,19 @@
   position: relative;
   overflow: hidden;
   aspect-ratio: 3 / 2;
+}
+
+@media (min-width: 1024px) {
+  .ImagesContainerGrid {
+    gap: 4rem;
+  }
+
+  .FullWidthImage,
+  .MainImageContainer {
+    margin-bottom: 4rem;
+  }
+
+  .VehicleBrandingImages {
+    padding-bottom: 16rem;
+  }
 }

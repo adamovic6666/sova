@@ -8,6 +8,9 @@ const WineImages = () => {
       <div className={styles.MainImageContainer}>
         <Image src="/wine-1.png" alt="laptop-image" fill />
       </div>
+      <div className={styles.MainImageContainerMobile}>
+        <Image src="/wine-1-crop.webp" alt="laptop-image" fill />
+      </div>
       <div className="container">
         <div className={styles.ImagesContainerWrapper}>
           <div className={styles.ImagesContainerGrid}>

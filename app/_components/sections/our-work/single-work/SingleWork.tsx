@@ -48,7 +48,7 @@ const SingleWork = ({
         project={project}
       />
       {title === "Content strategy" && <ContentStrategyImages />}
-      {title === "Add campaign" && <AddCampaignImages />}
+      {title === "Ad campaign" && <AddCampaignImages />}
       {title === "Monogram logo" && <MonogramLogoImages />}
       {title === "Brochure" && <BrochureImages />}
       {title === "Identity & Website" && <IdentityImages />}

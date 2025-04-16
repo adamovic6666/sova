@@ -1,5 +1,5 @@
 .InfographicImages {
-  padding-bottom: 16rem;
+  padding-bottom: 8rem;
 }
 
 .InfographicImageContainer {
@@ -9,7 +9,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
 }
 
 .InfographicImages .InfographicImageContainer:nth-of-type(1) {
@@ -22,4 +22,13 @@
 
 .InfographicImages .InfographicImageContainer:nth-of-type(3) {
   aspect-ratio: 4 / 3;
+}
+
+@media (min-width: 1024px) {
+  .InfographicImageContainer {
+    margin-bottom: 4rem;
+  }
+  .InfographicImages {
+    padding-bottom: 16rem;
+  }
 }

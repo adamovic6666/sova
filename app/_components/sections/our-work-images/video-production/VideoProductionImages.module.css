@@ -1,5 +1,5 @@
 .VideoProductionImages {
-  padding-bottom: 16rem;
+  padding-bottom: 8rem;
 }
 
 .BgImageFull,
@@ -11,7 +11,7 @@
   height: auto;
   position: relative;
   aspect-ratio: 16 / 9;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
 }
 
 .MainImageContainer {
@@ -28,7 +28,7 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
 }
 
 .VideoEmbed iframe {
@@ -37,4 +37,16 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .VideoProductionImages {
+    padding-bottom: 16rem;
+  }
+
+  .VideoEmbed,
+  .BgImageFull,
+  .MainImageContainer {
+    margin-bottom: 4rem;
+  }
 }

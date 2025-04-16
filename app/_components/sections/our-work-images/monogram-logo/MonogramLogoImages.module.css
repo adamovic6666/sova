@@ -1,5 +1,5 @@
 .MonogramLogoImages {
-  padding-bottom: 16rem;
+  padding-bottom: 8rem;
 }
 
 .MainImageContainerBottom,
@@ -10,7 +10,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
 }
 
 .MainImageContainer {
@@ -27,8 +27,8 @@
   align-items: center;
   width: 100%;
   height: auto;
-  margin-bottom: 4rem;
-  gap: 4rem;
+  margin-bottom: 1.6rem;
+  gap: 1.6rem;
 }
 
 .Flex > div {
@@ -38,4 +38,20 @@
   position: relative;
   overflow: hidden;
   aspect-ratio: 1/1;
+}
+
+@media (min-width: 1024px) {
+  .MonogramLogoImages {
+    padding-bottom: 16rem;
+  }
+
+  .Flex,
+  .MainImageContainerBottom,
+  .MainImageContainer {
+    margin-bottom: 4rem;
+  }
+
+  .Flex {
+    gap: 4rem;
+  }
 }

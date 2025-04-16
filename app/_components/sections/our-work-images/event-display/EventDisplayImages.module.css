@@ -1,5 +1,5 @@
 .EventDisplayImages {
-  padding-bottom: 16rem;
+  padding-bottom: 12rem;
 }
 
 .MainImageContainer {
@@ -10,7 +10,7 @@
   height: auto;
   position: relative;
   aspect-ratio: 10 / 7;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
 }
 
 .Flex {
@@ -19,8 +19,8 @@
   align-items: center;
   width: 100%;
   height: auto;
-  margin-bottom: 4rem;
-  gap: 4rem;
+  margin-bottom: 1.6rem;
+  gap: 1.6rem;
 }
 
 .Flex > div {
@@ -30,4 +30,19 @@
   position: relative;
   overflow: hidden;
   aspect-ratio: 16 / 25;
+}
+
+@media (min-width: 1024px) {
+  .EventDisplayImages {
+    padding-bottom: 16rem;
+  }
+
+  .Flex,
+  .MainImageContainer {
+    margin-bottom: 4rem;
+  }
+
+  .Flex {
+    gap: 4rem;
+  }
 }

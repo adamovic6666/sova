@@ -12,6 +12,14 @@ const WebsiteImages = () => {
           quality={100}
         />
       </div>
+      <div className={styles.MainImageMobile}>
+        <Image
+          src="/trkulja-web-1-crop.webp"
+          alt="website-fotografije"
+          fill
+          quality={100}
+        />
+      </div>
       <div className="container">
         <div className={styles.BelowMainImage}>
           <div className={styles.MainImageContainer}>

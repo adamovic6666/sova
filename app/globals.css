@@ -225,11 +225,13 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  .container {
-    padding: 0;
-  }
-
   h3 {
     letter-spacing: 0.16rem;
+  }
+}
+
+@media (min-width: 112rem) {
+  .container {
+    padding: 0;
   }
 }

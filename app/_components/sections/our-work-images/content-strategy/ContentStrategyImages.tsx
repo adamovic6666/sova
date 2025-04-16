@@ -11,6 +11,13 @@ const ContentStrategyImages = () => {
           fill={true}
         />
       </div>
+      <div className={styles.MainImageContainerMobile}>
+        <Image
+          src="/sadrzaj-drustvene-mreze-crop.webp"
+          alt="laptop-image"
+          fill={true}
+        />
+      </div>
       <div className="container">
         <div className={styles.ImagesContainerGridOddWrapper}>
           <div className={styles.ImagesContainerGridOdd}>

@@ -6,7 +6,7 @@
   height: auto;
   position: relative;
   aspect-ratio: 4 / 3;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
 }
 
 .MainImageContainer img {
@@ -18,9 +18,9 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(11, auto);
-  gap: 4rem;
+  gap: 1.6rem;
   margin: 0 auto;
-  padding-bottom: 20rem;
+  padding-bottom: 8rem;
 }
 
 .ImagesContainerGrid > div {
@@ -46,4 +46,20 @@
 .ImagesContainerGrid > div:nth-of-type(4) {
   grid-area: 4 / 2 / -1 / 3;
   aspect-ratio: 3 / 5;
+}
+
+@media (min-width: 768px) {
+  .ImagesContainerGrid {
+    padding-bottom: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .MainImageContainer {
+    margin-bottom: 4rem;
+  }
+
+  .ImagesContainerGrid {
+    gap: 4rem;
+  }
 }

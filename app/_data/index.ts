@@ -13,13 +13,13 @@ export const OurWorkData: OurWork[] = [
     sectionText:
       "For a leading Greek paint manufacturer with subsidiaries in Serbia and Bulgaria, we developed a social media content strategy that elevated their brand presence across both markets. By crafting visually compelling content and engaging narratives, we showcased their premium products through effective influencer partnerships and ad campaigns that increased brand awareness and engagement. From content creation to campaign execution, every detail was designed to make a lasting impact, positioning the brand as a top choice for quality paint solutions.",
     meta: {
-      title: "Our Work | Sova Creative Studio",
+      title: "Social Media Content Strategy | Sova Creative Studio",
       description:
         "Explore our work at Sova Creative Studio - a showcase of innovative branding, design, and visual communication solutions for global brands and local startups.",
     },
   },
   {
-    title: "Add campaign",
+    title: "Ad campaign",
     project: "ArcelorMittal",
     image: "/ad-campaign.jpg",
     alt: "Add campaign",

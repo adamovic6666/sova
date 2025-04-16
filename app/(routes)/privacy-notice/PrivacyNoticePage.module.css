@@ -1,0 +1,129 @@
+.PrivacyNoticePage {
+  padding: 120px 0;
+  font-family: var(--font-georgia-pro);
+}
+
+.MainTitle {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  font-family: var(--font-open-sans);
+}
+
+.SpacedTitle {
+  margin-top: 6.4rem;
+  font-family: var(--font-open-sans);
+}
+
+.EffectiveDate {
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 3.2rem;
+  color: #444;
+}
+
+.SectionTitle {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 2.4rem;
+  font-family: var(--font-open-sans);
+  justify-content: flex-start;
+}
+
+.SubTitle {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+  font-family: var(--font-open-sans);
+}
+
+.Paragraph {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.List {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.List li {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: #444;
+}
+
+.LinkList {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+.LinkList li {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+.Link {
+  text-decoration: none;
+}
+
+.Link:hover {
+  text-decoration: underline;
+}
+
+.ContactInfo {
+  margin: 2.4rem 0 3.2rem;
+  padding: 1.6rem;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactInfo a,
+.ContactInfo p {
+  margin: 0.8rem 0;
+}
+
+.PrivacyNoticePage {
+  display: flex;
+  padding: 8rem 1.6rem;
+  gap: 2.4rem;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .PrivacyNoticePage {
+    flex-direction: row;
+    padding: 12rem 1.6rem;
+  }
+
+  .MainTitle {
+    font-size: 3.2rem;
+  }
+
+  .SectionTitle {
+    font-size: 2.4rem;
+  }
+
+  .SubTitle {
+    font-size: 2rem;
+  }
+
+  .Break {
+    content: "";
+    display: block;
+    height: 0.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .PrivacyNoticePage {
+    flex-direction: row;
+    padding: 12rem 0;
+  }
+}

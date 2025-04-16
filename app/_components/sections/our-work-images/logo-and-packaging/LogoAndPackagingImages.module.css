@@ -1,7 +1,3 @@
-.LogoAndPackagingImages {
-  padding-bottom: 16rem;
-}
-
 .MainImageContainer {
   display: flex;
   justify-content: center;
@@ -10,7 +6,7 @@
   height: auto;
   position: relative;
   aspect-ratio: 8 / 5;
-  margin-bottom: 4rem;
+  margin-bottom: 1.6rem;
 }
 
 .FullWidthBackground {
@@ -21,17 +17,33 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 24rem 0;
-  gap: 8rem;
+  padding: 8rem 0 12rem;
 }
 
 .ImageOne {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1.5;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url("/vabo-full.svg") no-repeat center;
   max-width: 124rem;
+}
+
+@media (min-width: 1024px) {
+  .MainImageContainer {
+    margin-bottom: 4rem;
+  }
+  .LogoAndPackagingImages {
+    padding-bottom: 16rem;
+  }
+
+  .FullWidthBackground {
+    padding: 24rem 0;
+  }
+
+  .ImageOne {
+    aspect-ratio: 1/1;
+  }
 }

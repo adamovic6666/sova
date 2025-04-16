@@ -1,5 +1,5 @@
 .SpiritLabelImages {
-  padding-bottom: 16rem;
+  padding-bottom: 8rem;
 }
 
 .Flex {
@@ -8,8 +8,8 @@
   align-items: center;
   width: 100%;
   height: auto;
-  margin-bottom: 4rem;
-  gap: 4rem;
+  margin-bottom: 1.6rem;
+  gap: 1.6rem;
 }
 
 .Flex > div {
@@ -25,4 +25,15 @@
 
 .Triple > div {
   aspect-ratio: 1/1;
+}
+
+@media (min-width: 1024px) {
+  .Flex {
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .SpiritLabelImages {
+    padding-bottom: 16rem;
+  }
 }

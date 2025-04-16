@@ -101,6 +101,19 @@
 }
 
 @media (min-width: 768px) {
+  .Menu a {
+    font-size: 4dvh;
+    line-height: 3dvh;
+    transform: translate(1rem, 0.2dvh);
+  }
+
+  .Menu span {
+    font-size: 14dvh;
+    line-height: 11dvh;
+  }
+}
+
+@media (min-width: 1240px) {
   .MenuWrapper > div {
     flex-direction: row-reverse;
   }
@@ -132,7 +145,7 @@
   }
 
   .Menu span {
-    font-size: 20dvh;
-    line-height: 16dvh;
+    font-size: 19dvh;
+    line-height: 15dvh;
   }
 }

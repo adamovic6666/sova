@@ -1,11 +1,11 @@
 .ContentCreationImages {
-  padding-bottom: 20rem;
+  padding-bottom: 12rem;
 }
 
 .ContentCreationImages > div {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1.6rem;
 }
 
 .ContentCreationGridBottom,
@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  gap: 4rem;
+  gap: 1.6rem;
 }
 
 .ContentCreationGridBottom > div,
@@ -73,4 +73,16 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (min-width: 1024px) {
+  .ContentCreationImages > div,
+  .ContentCreationGridBottom,
+  .ContentCreationGridTop {
+    gap: 4rem;
+  }
+
+  .ContentCreationImages {
+    padding-bottom: 20rem;
+  }
 }
