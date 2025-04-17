@@ -74,7 +74,7 @@ p {
 }
 
 h2 {
-  font-size: clamp(3.5rem, 16.091vw + 0.205rem, 15rem);
+  font-size: clamp(4.5rem, 19.091vw + 0.205rem, 15rem);
   display: flex;
   gap: 2.5vw;
   width: 100%;
