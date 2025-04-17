@@ -60,6 +60,10 @@
   font-size: min(4vw, 1.6rem);
 }
 
+.ContactSingleWork h2 {
+  font-size: clamp(3.5rem, 16.091vw + 0.205rem, 15rem);
+}
+
 @media (min-width: 768px) {
   .Contact {
     padding: 12rem 0 4rem;

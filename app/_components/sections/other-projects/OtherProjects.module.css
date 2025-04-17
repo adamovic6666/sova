@@ -24,6 +24,7 @@
 .OtherProjects h2 {
   margin-bottom: 6.4rem;
   text-align: left;
+  font-size: clamp(3.5rem, 16.091vw + 0.205rem, 15rem);
 }
 
 .OtherProjectsItem {

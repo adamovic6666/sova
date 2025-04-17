@@ -65,7 +65,7 @@ const SingleWork = ({
       {title === "Content creation" && <ContentCreationImages />}
 
       <OtherProjects otherProjects={otherProjects} />
-      <Contact>
+      <Contact className="ContactSingleWork">
         <Title tag="h2" flex="column">
           <span>Need</span>
           <span>a quote!</span>

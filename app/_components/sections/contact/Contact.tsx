@@ -8,7 +8,13 @@ import ContactForm from "../../forms/contact-form/ContactForm";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-const Contact = ({ children }: { children?: React.ReactNode }) => {
+const Contact = ({
+  children,
+  className = "",
+}: {
+  children?: React.ReactNode;
+  className?: string;
+}) => {
   const pathName = usePathname();
   const isContactPage = pathName === "/contact-us";
 
@@ -26,7 +32,7 @@ const Contact = ({ children }: { children?: React.ReactNode }) => {
       <div className={`container ${styles.ContactGrid}`}>
         <div className="sticky">
           {children ? (
-            children
+            <span className={styles[className]}>{children}</span>
           ) : (
             <Title tag="h2" flex="column">
               <span>Who?</span>

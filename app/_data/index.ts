@@ -25,7 +25,7 @@ export const OurWorkData: OurWork[] = [
     alt: "Add campaign",
     link: "ad-design",
     pageTitle: ["LEADING", "THE WAY"],
-    sectionTitle: "AD CAMPAIGN DESIGNFOR TOP EXPORTER",
+    sectionTitle: "AD CAMPAIGN DESIGN FOR TOP EXPORTER",
     sectionText: `For ArcelorMittal, a global leader in steel production, we created an eye-catching ad campaign that celebrated their status as Bosnia and Herzegovina's leading exporter. With bold visuals and a clear message, the ad campaign resonated with audiences across diverse settings, from print media to dynamic outdoor spaces. This mix of media built a strong presence, showcasing the company’s vital role in the nation’s economy.`,
     meta: {
       title: "Ad Design | Sova Creative Studio ",
@@ -35,7 +35,7 @@ export const OurWorkData: OurWork[] = [
   },
   {
     title: "Monogram logo",
-    project: "Toros advisory",
+    project: "Toros Advisory",
     image: "/monogram-logo.jpg",
     alt: "Monogram logo",
     link: "logo-design",
@@ -93,7 +93,7 @@ design for a truly great cause.`,
   },
   {
     title: "Wine Label",
-    project: "Gora winery",
+    project: "Gora Winery",
     image: "/wine-label-design.jpg",
     alt: "Wine Label",
     link: "wine-label-design",
