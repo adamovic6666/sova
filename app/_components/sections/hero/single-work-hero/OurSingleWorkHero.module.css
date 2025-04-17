@@ -10,7 +10,7 @@
 }
 
 .OurSingleWorkHero h1 {
-  font-size: clamp(4.5rem, 19.091vw + 0.205rem, 15rem);
+  font-size: clamp(3.5rem, 16.091vw + 0.205rem, 15rem);
   display: flex;
   width: 100%;
   justify-content: flex-start;
@@ -23,7 +23,7 @@
 }
 
 .OurSingleWorkHero h3 {
-  line-height: 1.1;
+  line-height: 1.2;
   max-width: 80rem;
   margin-bottom: 2.4rem;
 }
