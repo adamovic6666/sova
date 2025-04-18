@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./PrivacyNoticePage.module.css";
-
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Privacy & Cookies Policy | Sova Creative Studio",
+};
 const PrivacyNoticePage = () => {
   return (
     <section

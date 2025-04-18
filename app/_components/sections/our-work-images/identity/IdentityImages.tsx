@@ -52,14 +52,6 @@ export const IdentityImages = () => {
               quality={100}
             />
           </div>
-          <div className={styles.MobileImageContainer}>
-            <Image
-              src="/mpathy-5-crop.webp"
-              alt="website-design"
-              fill
-              quality={100}
-            />
-          </div>
           <div className="container">
             <div className={styles.BelowDesktopImageContainer}>
               <div className={styles.MainImageContainer}>

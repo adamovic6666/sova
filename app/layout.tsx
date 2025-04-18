@@ -30,11 +30,7 @@ export const metadata: Metadata = {
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
   },
-  manifest: "/site.webmanifest",
   openGraph: {
     title: "Sova Creative Studio | We Make Your Brand Fly",
     description:
@@ -43,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Sova Creative Studio",
     images: [
       {
-        url: "/og.png",
+        url: "/og.jpg",
         width: 1200,
         height: 630,
         alt: "Sova Creative Studio",
@@ -61,8 +57,8 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <GoogleAnalytics />
       <body className={`${openSans.variable} ${myFont.variable}`}>
+        <GoogleAnalytics />
         <Header />
         {children}
       </body>

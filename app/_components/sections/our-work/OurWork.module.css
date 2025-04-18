@@ -41,6 +41,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-bottom: 8rem;
 }
 
 /* Each item in a row */
@@ -123,6 +124,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.2rem;
+    padding-bottom: 0;
   }
 
   .OurWorkItem p {

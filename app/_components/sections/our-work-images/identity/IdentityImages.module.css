@@ -3,7 +3,6 @@
   background-color: #00aae6;
 }
 
-.MobileImageContainer,
 .MainImageContainerTop,
 .DesktopImageContainer,
 .MainImageContainer {
@@ -33,23 +32,13 @@
   margin-bottom: 0;
 }
 
-.MobileImageContainer,
 .DesktopImageContainer {
   max-width: 1920px;
   margin: 0 auto;
   margin: 6.4rem 0;
-}
-
-.MobileImageContainer {
-  aspect-ratio: 16 / 9;
-}
-
-.DesktopImageContainer {
   aspect-ratio: 24 / 9;
-  display: none;
 }
 
-.MobileImageContainer::before,
 .DesktopImageContainer::before {
   content: "";
   position: absolute;
@@ -67,10 +56,6 @@
   align-items: center;
   width: 100%;
   height: auto;
-}
-
-.Flex {
-  flex-direction: column;
 }
 
 .Flex {
@@ -124,7 +109,6 @@
   .Flex {
     gap: 4rem;
     margin-bottom: 4rem;
-    flex-direction: row;
   }
 
   .DesktopImageContainer {
@@ -143,9 +127,5 @@
 
   .IdentityImagesBottom .MainImageContainer {
     margin-bottom: 8rem;
-  }
-
-  .MobileImageContainer {
-    display: none;
   }
 }
