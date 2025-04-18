@@ -126,8 +126,8 @@ export default function CookieConsent({
                 <h3 className={styles.cookieTitle}>Cookie Consent</h3>
                 <p className={styles.cookieText}>
                   We use cookies to improve your experience on our website. By
-                  clicking "Accept All", you consent to the use of all cookies.
-                  You may visit our{" "}
+                  clicking &quot;Accept All&quot;, you consent to the use of all
+                  cookies. You may visit our{" "}
                   <a href="/privacy-notice" className={styles.cookieLink}>
                     Privacy Policy
                   </a>{" "}
