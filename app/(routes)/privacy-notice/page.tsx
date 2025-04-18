@@ -3,7 +3,10 @@ import styles from "./PrivacyNoticePage.module.css";
 
 const PrivacyNoticePage = () => {
   return (
-    <div className={`${styles.PrivacyNoticePage} container `} data-bg="black">
+    <section
+      className={`${styles.PrivacyNoticePage} container `}
+      data-bg="black"
+    >
       <div>
         <h1 className={styles.MainTitle}>PRIVACY POLICY</h1>
         <p className={styles.EffectiveDate}>Effective Date: January 1st 2025</p>
@@ -646,7 +649,7 @@ const PrivacyNoticePage = () => {
           skladu sa ovom Politikom kolačića.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

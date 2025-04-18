@@ -8,19 +8,26 @@ import Instagram from "../../svg/Instagram";
 import Facebook from "../../svg/Facebook";
 import { usePathname } from "next/navigation";
 
-const Menu = ({ color }: { color: "black" | "white" }) => {
-  const [openMenu, setOpenMenu] = useState<boolean>(false);
+const Menu = ({ 
+  color, 
+  isOpen, 
+  setIsOpen 
+}: { 
+  color: "black" | "white",
+  isOpen: boolean,
+  setIsOpen: (isOpen: boolean) => void
+}) => {
   const [hovered, setHovered] = useState<string>("");
   const pathname = usePathname();
 
   useEffect(() => {
     if (pathname) {
-      setOpenMenu(false);
+      setIsOpen(false);
     }
-  }, [pathname]);
+  }, [pathname, setIsOpen]);
 
   const closeMenuAndEnableScroll = () => {
-    setOpenMenu(false);
+    setIsOpen(false);
     document.body.style.overflow = "auto";
   };
 
@@ -28,7 +35,7 @@ const Menu = ({ color }: { color: "black" | "white" }) => {
     <div>
       <div
         className={`${styles.MenuWrapper} ${
-          openMenu ? `${styles.MenuOpen} menu-open` : ""
+          isOpen ? `${styles.MenuOpen} menu-open` : ""
         }`}
       >
         <div className="container">
@@ -38,7 +45,7 @@ const Menu = ({ color }: { color: "black" | "white" }) => {
             <Link
               href="/"
               onClick={() => {
-                setOpenMenu(false);
+                setIsOpen(false);
               }}
               onMouseEnter={() => setHovered("/")}
               className={`${hovered === "/" ? styles.active : ""} ${
@@ -106,13 +113,13 @@ const Menu = ({ color }: { color: "black" | "white" }) => {
       </div>
       <Button
         onClick={() => {
-          setOpenMenu(!openMenu);
-          document.body.style.overflow = openMenu ? "auto" : "hidden";
+          setIsOpen(!isOpen);
+          document.body.style.overflow = isOpen ? "auto" : "hidden";
           document.body.style.overflowX = "hidden";
         }}
         color={color}
       >
-        {openMenu ? "Close" : "Menu"}
+        {isOpen ? "Close" : "Menu"}
       </Button>
     </div>
   );

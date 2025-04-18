@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const VideoProductionImages = () => {
   return (
-    <div className={styles.VideoProductionImages}>
+    <div className={`${styles.VideoProductionImages} panel`}>
       <div className="container">
         <div className={styles.MainImageContainer}>
           <Image

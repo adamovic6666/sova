@@ -21,6 +21,7 @@
   height: auto;
   margin-bottom: 1.6rem;
   gap: 1.6rem;
+  flex-direction: column;
 }
 
 .Flex > div {
@@ -43,5 +44,6 @@
 
   .Flex {
     gap: 4rem;
+    flex-direction: row;
   }
 }

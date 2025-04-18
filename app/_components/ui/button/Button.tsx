@@ -10,6 +10,7 @@ const Button = ({
   href = "/",
   className = "",
   color,
+  disabled = false,
 }: {
   children: React.ReactNode;
   onClick?: () => void;
@@ -17,6 +18,7 @@ const Button = ({
   href?: string;
   className?: string;
   color?: "black" | "white";
+  disabled?: boolean;
 }) => {
   const el =
     type === "link" ? (
@@ -32,8 +34,11 @@ const Button = ({
               : { backgroundColor: "white", color: "black" }
             : undefined
         }
-        className={`${className} ${styles.Button}`}
+        className={`${className} ${styles.Button} ${
+          disabled ? styles.Disabled : ""
+        }`}
         onClick={onClick}
+        disabled={disabled}
       >
         {children}
       </button>

@@ -50,7 +50,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 100%;
   height: auto;
   margin-bottom: 1.6rem;
@@ -59,17 +58,20 @@
 
 .Flex > div {
   width: 100%;
-  overflow: hidden;
   height: auto;
   position: relative;
   aspect-ratio: 2 / 4;
+  border-radius: 0.4rem;
 }
 
 .Flex > div,
 .MainImageContainer {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  border-radius: 1rem;
+}
+
+.MainImageContainer {
+  border-radius: 0.4rem;
 }
 
 .BelowMainImage {
@@ -88,7 +90,6 @@
   }
 
   .Flex {
-    flex-direction: row;
     margin-bottom: 4rem;
     gap: 4rem;
   }
@@ -99,5 +100,9 @@
 
   .WebsiteImages {
     padding-bottom: 16rem;
+  }
+
+  .Flex > div {
+    border-radius: 1.2rem;
   }
 }

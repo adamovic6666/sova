@@ -1,13 +1,36 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./WhoWeAre.module.css";
 import Title from "../../title/Title";
 import Wave from "../../wave/Wave";
-
+import { useParams } from "next/navigation";
 const WhoWeAre = () => {
+  const params = useParams();
+  const anchorRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    if (
+      window.location.hash === "#about-us" ||
+      window.location.hash === "#about-s"
+    ) {
+      setTimeout(() => {
+        const section = document.getElementById("about-us");
+        if (section) {
+          window.scrollTo({
+            top: (anchorRef.current?.offsetHeight || 0) - 80,
+            behavior: "smooth",
+          });
+        }
+      }, 200);
+    }
+  }, [params]);
+
   return (
-    <section className={`panel ${styles.WhoWeAre}`} data-bg="white">
-      <span className={styles.Anchor} id="about-us"></span>
+    <section
+      className={`panel ${styles.WhoWeAre}`}
+      data-bg="white"
+      ref={anchorRef}
+    >
+      <div className={styles.Anchor} id="about-us"></div>
       <Wave bgColor="#131313" />
       <div className="container">
         <Title tag="h2" flex="column">

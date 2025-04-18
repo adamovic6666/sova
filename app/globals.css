@@ -206,7 +206,7 @@ h3 {
 
 .swiper-pagination {
   position: absolute;
-  bottom: 3.2rem !important;
+  bottom: 2.4rem !important;
   z-index: 10 !important;
 }
 
@@ -233,5 +233,9 @@ h3 {
 @media (min-width: 112rem) {
   .container {
     padding: 0;
+  }
+
+  .swiper-pagination {
+    bottom: 3.2rem !important;
   }
 }

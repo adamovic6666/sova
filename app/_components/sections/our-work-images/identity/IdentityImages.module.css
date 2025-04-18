@@ -3,6 +3,7 @@
   background-color: #00aae6;
 }
 
+.MobileImageContainer,
 .MainImageContainerTop,
 .DesktopImageContainer,
 .MainImageContainer {
@@ -32,13 +33,23 @@
   margin-bottom: 0;
 }
 
+.MobileImageContainer,
 .DesktopImageContainer {
   max-width: 1920px;
   margin: 0 auto;
-  aspect-ratio: 24 / 9;
   margin: 6.4rem 0;
 }
 
+.MobileImageContainer {
+  aspect-ratio: 16 / 9;
+}
+
+.DesktopImageContainer {
+  aspect-ratio: 24 / 9;
+  display: none;
+}
+
+.MobileImageContainer::before,
 .DesktopImageContainer::before {
   content: "";
   position: absolute;
@@ -59,6 +70,10 @@
 }
 
 .Flex {
+  flex-direction: column;
+}
+
+.Flex {
   gap: 1.6rem;
   margin-bottom: 1.6rem;
 }
@@ -66,13 +81,11 @@
 .FlexBottom {
   gap: 2.4rem;
   margin-bottom: 2.4rem;
-  flex-direction: column;
 }
 
 .FlexBottom > div,
 .Flex > div {
   width: 100%;
-  overflow: hidden;
   height: auto;
   position: relative;
   overflow: hidden;
@@ -86,7 +99,7 @@
 .FlexBottom > div {
   aspect-ratio: 3 / 6;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 }
 
 .BelowDesktopImageContainer {
@@ -111,19 +124,28 @@
   .Flex {
     gap: 4rem;
     margin-bottom: 4rem;
+    flex-direction: row;
   }
 
   .DesktopImageContainer {
     margin: 8rem 0 0;
+    display: flex;
   }
 
   .FlexBottom {
     gap: 8rem;
     margin-bottom: 8rem;
-    flex-direction: row;
+  }
+
+  .FlexBottom > div {
+    border-radius: 0.8rem;
   }
 
   .IdentityImagesBottom .MainImageContainer {
     margin-bottom: 8rem;
+  }
+
+  .MobileImageContainer {
+    display: none;
   }
 }

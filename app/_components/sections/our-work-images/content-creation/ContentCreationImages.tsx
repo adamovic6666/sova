@@ -36,10 +36,10 @@ const ContentCreationImages = () => {
                 <Image src={"/sc-swiper-2.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/sc-swiper-3.jpg"} alt="drustvene-mreze" fill />
+                <Image src={"/sc-swiper-4.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/sc-swiper-4.jpg"} alt="drustvene-mreze" fill />
+                <Image src={"/sc-swiper-3.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
                 <Image src={"/sc-swiper-1.jpg"} alt="drustvene-mreze" fill />
@@ -69,10 +69,10 @@ const ContentCreationImages = () => {
                 <Image src={"/swiper-sc-6.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/swiper-sc-7.jpg"} alt="drustvene-mreze" fill />
+                <Image src={"/swiper-sc-8.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
-                <Image src={"/swiper-sc-8.jpg"} alt="drustvene-mreze" fill />
+                <Image src={"/swiper-sc-7.jpg"} alt="drustvene-mreze" fill />
               </SwiperSlide>
               <SwiperSlide className={styles.SliderImage}>
                 <Image src={"/swiper-sc-5.jpg"} alt="drustvene-mreze" fill />

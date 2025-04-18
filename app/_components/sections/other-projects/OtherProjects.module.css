@@ -64,8 +64,7 @@
 }
 
 .OtherProjectsContainer > a {
-  margin-top: 2.4rem;
-  margin-left: auto;
+  margin: 4rem auto 0;
   width: fit-content;
 }
 
@@ -96,5 +95,9 @@
     align-items: center;
     text-align: center;
     flex-direction: row;
+  }
+
+  .OtherProjectsContainer > a {
+    margin: 4rem 0 0 auto;
   }
 }

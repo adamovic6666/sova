@@ -6,13 +6,15 @@ import styles from "./Header.module.css";
 import { usePathname } from "next/navigation";
 
 const Header = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const pathname = usePathname();
+  const isMainPage = pathname === "/";
+  const [isVisible, setIsVisible] = useState(!isMainPage);
   const [logoColor, setLogoColor] = useState<"black" | "white">("white");
+  const [menuOpen, setMenuOpen] = useState(false);
   const lastScrollY = useRef<number>(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const observerRef = useRef<IntersectionObserver | null>(null);
   const headerMounted = useRef(true);
-  const pathname = usePathname();
 
   // Check if animation is already done when component mounts
   useEffect(() => {
@@ -92,7 +94,6 @@ const Header = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const bgColor = entry.target.getAttribute("data-bg");
-            console.log(bgColor, "bgColor");
             setLogoColor(bgColor === "dark" ? "white" : "black");
           }
         });
@@ -124,10 +125,15 @@ const Header = () => {
         <LogoWhite
           logoColor={logoColor}
           onHeaderHide={() => {
-            setIsVisible(false);
+            if (menuOpen) {
+              setMenuOpen(false);
+              document.body.style.overflow = "auto";
+            } else {
+              setIsVisible(false);
+            }
           }}
         />
-        <Menu color={logoColor} />
+        <Menu color={logoColor} isOpen={menuOpen} setIsOpen={setMenuOpen} />
       </div>
     </header>
   );

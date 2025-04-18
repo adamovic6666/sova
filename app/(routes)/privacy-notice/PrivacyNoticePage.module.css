@@ -5,7 +5,7 @@
 
 .MainTitle {
   font-size: 3.6rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 0.8rem;
   font-family: var(--font-open-sans);
 }
@@ -24,7 +24,8 @@
 
 .SectionTitle {
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 800;
+
   margin-top: 4rem;
   margin-bottom: 2.4rem;
   font-family: var(--font-open-sans);
