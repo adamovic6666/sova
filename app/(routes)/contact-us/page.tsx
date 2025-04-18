@@ -6,5 +6,9 @@ export const metadata: Metadata = {
     "Get in touch with Sova Creative Studio - whether you need branding, design, or visual communication expertise, we’re here to help. Let’s make your brand fly!",
 };
 export default function ContactPage() {
-  return <Contact />;
+  return (
+    <main className="main-content">
+      <Contact />
+    </main>
+  );
 }

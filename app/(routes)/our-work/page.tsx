@@ -7,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function OurWorkPage() {
-  return <OurWorkPageContent />;
+  return (
+    <main className="main-content">
+      <OurWorkPageContent />
+    </main>
+  );
 }

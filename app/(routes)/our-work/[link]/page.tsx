@@ -29,14 +29,16 @@ const SingleWorkPage = async ({
   );
   const { pageTitle, sectionTitle, sectionText, project, title } = data || {};
   return (
-    <SingleWork
-      pageTitle={pageTitle}
-      sectionTitle={sectionTitle}
-      sectionText={sectionText}
-      project={project}
-      otherProjects={otherProjects}
-      title={title}
-    />
+    <main className="main-content">
+      <SingleWork
+        pageTitle={pageTitle}
+        sectionTitle={sectionTitle}
+        sectionText={sectionText}
+        project={project}
+        otherProjects={otherProjects}
+        title={title}
+      />
+    </main>
   );
 };
 
