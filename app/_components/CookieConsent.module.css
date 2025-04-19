@@ -55,9 +55,9 @@
   color: #fff;
 }
 
-.cookieButtonPrimary {
-  composes: cookieButton;
-  background-color: #000;
+.cookieButtons .cookieButtonPrimary,
+.modalFooter .cookieButtonPrimary {
+  background: #000;
   color: #fff;
 }
 
