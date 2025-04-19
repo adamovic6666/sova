@@ -57,7 +57,7 @@
 
 .cookieButtonPrimary {
   composes: cookieButton;
-  background: #000;
+  background-color: #000;
   color: #fff;
 }
 
