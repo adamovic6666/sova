@@ -50,14 +50,18 @@
   font-size: 1.4rem;
 }
 
-.cookieButton:hover {
-  background-color: #000;
-  color: #fff;
+.cookieButtons button:nth-of-type(1) {
+  border: unset;
+  text-decoration: underline;
 }
 
-.cookieButtons .cookieButtonPrimary,
-.modalFooter .cookieButtonPrimary {
-  background: #000;
+.cookieButtons button:nth-of-type(1):hover {
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+.cookieButton:hover {
+  background-color: #000;
   color: #fff;
 }
 
@@ -201,6 +205,10 @@
   justify-content: flex-end;
   gap: 1.6rem;
   flex-direction: column;
+}
+
+.modalFooter button {
+  font-size: 1.4rem;
 }
 
 .floatingButton {
