@@ -18,7 +18,6 @@ export default function GoogleAnalytics() {
   }, []);
 
   const handlePreferenceChange = (preferences: ConsentOptions) => {
-    console.log("GoogleAnalytics: received preferences update", preferences);
     setAnalyticsEnabled(preferences.analytics);
   };
 

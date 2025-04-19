@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import styles from "./CookieConsent.module.css";
+import Button from "./ui/button/Button";
 
 type ConsentOptions = {
   necessary: boolean;
@@ -33,28 +34,19 @@ export default function CookieConsent({
   useEffect(() => {
     if (!isMounted) return;
 
-    console.log("CookieConsent: Initializing...");
     const storedConsent = localStorage.getItem("cookie-consent-preferences");
-    console.log("CookieConsent: Stored consent:", storedConsent);
 
     if (storedConsent) {
       try {
         const parsedConsent = JSON.parse(storedConsent);
         setPreferences(parsedConsent);
         onPreferenceChange(parsedConsent);
-        console.log("CookieConsent: Parsed consent:", parsedConsent);
-      } catch (e) {
-        // If JSON parse fails, show the banner after 5 seconds
-        console.log("CookieConsent: Error parsing stored consent:", e);
+      } catch {
         setTimeout(() => {
           setShowBanner(true);
         }, 5500);
       }
     } else {
-      // Show banner after 5 seconds if no consent stored
-      console.log(
-        "CookieConsent: No stored consent, showing banner after 5 seconds"
-      );
       setTimeout(() => {
         setShowBanner(true);
       }, 5500);
@@ -123,7 +115,6 @@ export default function CookieConsent({
           <div className="container">
             <div className={styles.cookieContent}>
               <div>
-                <h3 className={styles.cookieTitle}>Cookie Consent</h3>
                 <p className={styles.cookieText}>
                   We use cookies to improve your experience on our website. By
                   clicking &quot;Accept All&quot;, you consent to the use of all
@@ -135,24 +126,24 @@ export default function CookieConsent({
                 </p>
               </div>
               <div className={styles.cookieButtons}>
-                <button
+                <Button
                   onClick={openConsentManager}
                   className={styles.cookieButton}
                 >
                   Manage Preferences
-                </button>
-                <button
+                </Button>
+                <Button
                   onClick={handleAcceptNecessary}
                   className={styles.cookieButton}
                 >
                   Accept Necessary
-                </button>
-                <button
+                </Button>
+                <Button
                   onClick={handleAcceptAll}
                   className={styles.cookieButtonPrimary}
                 >
                   Accept All
-                </button>
+                </Button>
               </div>
             </div>
           </div>
@@ -258,38 +249,29 @@ export default function CookieConsent({
               </div>
 
               <div className={styles.modalFooter}>
-                <button
+                <Button
                   onClick={handleAcceptNecessary}
                   className={styles.cookieButton}
                 >
                   Necessary Only
-                </button>
-                <button
+                </Button>
+                <Button
                   onClick={handleAcceptAll}
                   className={styles.cookieButton}
                 >
                   Accept All
-                </button>
-                <button
+                </Button>
+                <Button
                   onClick={handleSavePreferences}
                   className={styles.cookieButtonPrimary}
                 >
                   Save Preferences
-                </button>
+                </Button>
               </div>
             </div>
           </div>
         </div>
       )}
-
-      {/* Floating button to reopen consent manager */}
-      <button
-        onClick={() => setShowModal(true)}
-        className={styles.floatingButton}
-        title="Cookie Settings"
-      >
-        🍪
-      </button>
     </>
   );
 }

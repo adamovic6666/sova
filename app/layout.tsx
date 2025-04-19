@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./_components/sections/header/Header";
 import GoogleAnalytics from "./_components/GoogleAnalytics";
+import ogImage from "../public/og.jpg";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const myFont = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.sova.ooo/"),
+  metadataBase: new URL("https://sova-jade.vercel.app/"),
   applicationName: "Sova Creative Studio",
   title: "Sova Creative Studio | We Make Your Brand Fly",
   description:
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Sova Creative Studio",
     images: [
       {
-        url: "/og.jpg",
+        url: ogImage.src,
         width: 1200,
         height: 630,
         alt: "Sova Creative Studio",
