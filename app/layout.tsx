@@ -19,7 +19,7 @@ const myFont = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sova-jade.vercel.app/"),
+  metadataBase: new URL("https://www.sova.ooo/"),
   applicationName: "Sova Creative Studio",
   title: "Sova Creative Studio | We Make Your Brand Fly",
   description:
