@@ -130,20 +130,22 @@ export default function CookieConsent({
                   onClick={openConsentManager}
                   className={styles.cookieButton}
                 >
-                  Manage Preferences
+                  Cookies Settings
                 </Button>
-                <Button
-                  onClick={handleAcceptNecessary}
-                  className={styles.cookieButton}
-                >
-                  Accept Necessary
-                </Button>
-                <Button
-                  onClick={handleAcceptAll}
-                  className={styles.cookieButtonPrimary}
-                >
-                  Accept All
-                </Button>
+                <div className={styles.flex}>
+                  <Button
+                    onClick={handleAcceptNecessary}
+                    className={styles.cookieButton}
+                  >
+                    Reject All
+                  </Button>
+                  <Button
+                    onClick={handleAcceptAll}
+                    className={styles.cookieButtonPrimary}
+                  >
+                    Accept All
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -249,23 +251,26 @@ export default function CookieConsent({
               </div>
 
               <div className={styles.modalFooter}>
-                <Button
-                  onClick={handleAcceptNecessary}
-                  className={styles.cookieButton}
-                >
-                  Necessary Only
-                </Button>
-                <Button
-                  onClick={handleAcceptAll}
-                  className={styles.cookieButton}
-                >
-                  Accept All
-                </Button>
+                <div className={styles.flex}>
+                  <Button
+                    onClick={handleAcceptNecessary}
+                    className={styles.cookieButton}
+                  >
+                    Reject All
+                  </Button>
+                  <Button
+                    onClick={handleAcceptAll}
+                    className={styles.cookieButton}
+                  >
+                    Accept All
+                  </Button>
+                </div>
+
                 <Button
                   onClick={handleSavePreferences}
                   className={styles.cookieButtonPrimary}
                 >
-                  Save Preferences
+                  Save Settings
                 </Button>
               </div>
             </div>

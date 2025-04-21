@@ -37,6 +37,12 @@
   font-size: 1.4rem;
 }
 
+.modalText .cookieLink {
+  color: var(--text-primary);
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+
 .cookieButtons {
   display: flex;
   gap: 1.6rem;
@@ -46,16 +52,25 @@
   width: 100%;
 }
 
-.cookieButtons button {
+.flex button {
   font-size: 1.4rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-family: var(--font-open-sans);
+  padding: 0.8rem 2.4rem;
+  width: 100%;
 }
 
-.cookieButtons button:nth-of-type(1) {
+.cookieButtons > button {
   border: unset;
   text-decoration: underline;
+  font-family: var(--font-open-sans);
+  padding: 0.8rem 1.6rem;
+  color: #000;
 }
 
-.cookieButtons button:nth-of-type(1):hover {
+.cookieButtons > button:hover {
   background-color: transparent;
   color: var(--text-primary);
 }
@@ -65,8 +80,16 @@
   color: #fff;
 }
 
+.cookieButton:hover,
 .cookieButtonPrimary:hover {
   opacity: 0.8;
+}
+
+.flex {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .modalOverlay {
@@ -106,7 +129,7 @@
 .modalTitle {
   font-size: 2.4rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: #000;
   letter-spacing: 0.1rem;
   font-family: var(--font-open-sans);
   text-transform: uppercase;
@@ -149,7 +172,7 @@
 .optionTitle {
   font-size: 1.8rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: #000;
   font-family: var(--font-open-sans);
   text-transform: uppercase;
 }
@@ -180,6 +203,7 @@
 .toggleDisabled {
   composes: toggle;
   cursor: not-allowed;
+  background-color: #000;
 }
 
 .toggleHandle {
@@ -192,6 +216,12 @@
   border: 1px solid #000;
   left: 0;
   top: 0;
+}
+
+.toggleDisabled .toggleHandle {
+  border: 1px solid #999;
+  right: 0;
+  left: unset;
 }
 
 .toggleHandleActive {
@@ -209,6 +239,11 @@
 
 .modalFooter button {
   font-size: 1.4rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-family: var(--font-open-sans);
+  padding: 0.8rem 1.6rem;
 }
 
 .floatingButton {
@@ -265,5 +300,10 @@
 
   .cookieOption {
     padding: 2rem;
+  }
+
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
