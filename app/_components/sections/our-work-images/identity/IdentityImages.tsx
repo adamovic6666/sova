@@ -3,7 +3,7 @@ import styles from "./IdentityImages.module.css";
 import Image from "next/image";
 export const IdentityImages = () => {
   return (
-    <>
+    <div className="panel">
       <div className={styles.IdentityImages}>
         <div className="container">
           <div className={styles.MainImageContainerTop}>
@@ -52,7 +52,7 @@ export const IdentityImages = () => {
               quality={100}
             />
           </div>
-          <div className="container">
+          <div className="container ">
             <div className={styles.BelowDesktopImageContainer}>
               <div className={styles.MainImageContainer}>
                 <Image
@@ -108,6 +108,6 @@ export const IdentityImages = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

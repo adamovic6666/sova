@@ -31,7 +31,7 @@ const WhoWeAre = () => {
       ref={anchorRef}
     >
       <div className={styles.Anchor} id="about-us"></div>
-      <Wave bgColor="#131313" />
+      <Wave bgColor="#222" />
       <div className="container">
         <Title tag="h2" flex="column">
           <span>Whooo</span>
