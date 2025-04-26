@@ -7,7 +7,7 @@ const VehicleBrandingImages = () => {
       <div className="container">
         <div className={styles.MainImageContainer}>
           <Image
-            src="/vitex-car-1.jpg"
+            src="/vitex-car-1.webp"
             alt="brendiranje-bozila"
             fill
             quality={100}
@@ -16,7 +16,7 @@ const VehicleBrandingImages = () => {
       </div>
       <div className={styles.FullWidthImage}>
         <Image
-          src="/vitex-car-2.jpg"
+          src="/vitex-car-2.webp"
           alt="brendiranje-bozila"
           fill
           quality={100}
@@ -26,7 +26,7 @@ const VehicleBrandingImages = () => {
         <div className={styles.ImagesContainerGrid}>
           <div>
             <Image
-              src="/vitex-car-3.jpg"
+              src="/vitex-car-3.webp"
               alt="brendiranje-bozila"
               fill
               quality={100}
@@ -34,7 +34,7 @@ const VehicleBrandingImages = () => {
           </div>
           <div>
             <Image
-              src="/vitex-car-4.jpg"
+              src="/vitex-car-4.webp"
               alt="brendiranje-bozila"
               fill
               quality={100}
@@ -42,7 +42,7 @@ const VehicleBrandingImages = () => {
           </div>
           <div>
             <Image
-              src="/vitex-car-5.jpg"
+              src="/vitex-car-5.webp"
               alt="brendiranje-bozila"
               fill
               quality={100}
@@ -50,7 +50,7 @@ const VehicleBrandingImages = () => {
           </div>
           <div>
             <Image
-              src="/vitex-car-6.jpg"
+              src="/vitex-car-6.webp"
               alt="brendiranje-bozila"
               fill
               quality={100}

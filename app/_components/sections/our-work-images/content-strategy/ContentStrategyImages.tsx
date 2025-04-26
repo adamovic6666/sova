@@ -6,7 +6,7 @@ const ContentStrategyImages = () => {
     <div className={`${styles.ContentStrategyImages} panel`}>
       <div className={styles.MainImageContainer}>
         <Image
-          src="/sadrzaj-drustvene-mreze.png"
+          src="/sadrzaj-drustvene-mreze.webp"
           alt="laptop-image"
           fill={true}
         />
@@ -23,24 +23,24 @@ const ContentStrategyImages = () => {
           <div className={styles.ImagesContainerGridOdd}>
             <div>
               <Image
-                src="/vitex-1.png"
+                src="/vitex-1.webp"
                 alt="proizvodnja-sadrzaj-drustvene-mreze"
                 fill
               />
             </div>
             <div>
               <Image
-                src="/vitex-2.png"
+                src="/vitex-2.webp"
                 alt="drustvene-mreze-dizajn-sadrzaj"
                 fill
               />
             </div>
             <div>
-              <Image src="/vitex-3.png" alt="drustvene-mreze-sadrzaj" fill />
+              <Image src="/vitex-3.webp" alt="drustvene-mreze-sadrzaj" fill />
             </div>
             <div>
               <Image
-                src="/vitex-4.png"
+                src="/vitex-4.webp"
                 alt="proizvodnja-sadrzaj-drustvene-mreze"
                 fill
               />
@@ -49,28 +49,28 @@ const ContentStrategyImages = () => {
           <div className={styles.ImagesContainerGridEven}>
             <div>
               <Image
-                src="/vitex-5.png"
+                src="/vitex-5.webp"
                 alt="drustvene-mreze-proizvodnja-sadrzaj"
                 fill
               />
             </div>
             <div>
               <Image
-                src="/vitex-6.png"
+                src="/vitex-6.webp"
                 alt="drustvene-mreze-proizvodnja-sadrzaj"
                 fill
               />
             </div>
             <div>
               <Image
-                src="/vitex-07.png"
+                src="/vitex-7.webp"
                 alt="drustvene-mreze-proizvodnja-sadrzaj"
                 fill
               />
             </div>
             <div>
               <Image
-                src="/vitex-8.png"
+                src="/vitex-8.webp"
                 alt="drustvene-mreze-proizvodnja-sadrzaj"
                 fill
               />
@@ -79,21 +79,21 @@ const ContentStrategyImages = () => {
           <div className={styles.ImagesContainerGridOdd}>
             <div>
               <Image
-                src="/vitex-09.png"
+                src="/vitex-9.webp"
                 alt="drustvene-mreze-postovi-dizajn"
                 fill
               />
             </div>
             <div>
               <Image
-                src="/vitex-10.png"
+                src="/vitex-10.webp"
                 alt="drustvene-mreze-postovi-dizajn"
                 fill
               />
             </div>
             <div>
               <Image
-                src="/vitex-11.png"
+                src="/vitex-11.webp"
                 alt="drustvene-mreze-postovi-dizajn"
                 fill
               />
@@ -101,7 +101,7 @@ const ContentStrategyImages = () => {
             <div>
               {" "}
               <Image
-                src="/vitex-12.png"
+                src="/vitex-12.webp"
                 alt="drustvene-mreze-postovi-dizajn"
                 fill
               />
@@ -109,17 +109,17 @@ const ContentStrategyImages = () => {
           </div>
           <div className={styles.ImagesContainerGridEven}>
             <div>
-              <Image src="/vitex-13.png" alt="postovi-drustvene-mreze" fill />
+              <Image src="/vitex-13.webp" alt="postovi-drustvene-mreze" fill />
             </div>
             <div>
-              <Image src="/vitex-14.png" alt="postovi-drustvene-mreze" fill />
+              <Image src="/vitex-14.webp" alt="postovi-drustvene-mreze" fill />
             </div>
             <div>
-              <Image src="/vitex-015.png" alt="postovi-drustvene-mreze" fill />
+              <Image src="/vitex-15.webp" alt="postovi-drustvene-mreze" fill />
             </div>
             <div>
               <Image
-                src="/vitex-16.png"
+                src="/vitex-16.webp"
                 alt="postovi-dizajn-drustvene-mreze"
                 fill
               />

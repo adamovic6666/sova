@@ -7,7 +7,7 @@ const PackagingImages = () => {
       <div className="container">
         <div className={styles.MainImageContainer}>
           <Image
-            src="/trkulja-1.jpg"
+            src="/trkulja-1.webp"
             alt="dizajn-pakovanja"
             fill
             quality={100}
@@ -15,7 +15,7 @@ const PackagingImages = () => {
         </div>
         <div className={styles.MainImageContainer}>
           <Image
-            src="/trkulja-2.jpg"
+            src="/trkulja-2.webp"
             alt="dizajn-pakovanja"
             fill
             quality={100}
@@ -23,7 +23,7 @@ const PackagingImages = () => {
         </div>
         <div className={styles.MainImageContainer}>
           <Image
-            src="/trkulja-3.jpg"
+            src="/trkulja-3.webp"
             alt="dizajn-pakovanja"
             fill
             quality={100}
@@ -31,7 +31,7 @@ const PackagingImages = () => {
         </div>
         <div className={styles.MainImageContainer}>
           <Image
-            src="/trkulja-4.jpg"
+            src="/trkulja-4.webp"
             alt="dizajn-pakovanja"
             fill
             quality={100}

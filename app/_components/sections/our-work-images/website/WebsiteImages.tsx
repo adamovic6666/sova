@@ -6,7 +6,7 @@ const WebsiteImages = () => {
     <div className={`${styles.WebsiteImages} panel`}>
       <div className={styles.MainImage}>
         <Image
-          src="/trkulja-web-1.png"
+          src="/trkulja-web-1.webp"
           alt="website-fotografije"
           fill
           quality={100}
@@ -24,7 +24,7 @@ const WebsiteImages = () => {
         <div className={styles.BelowMainImage}>
           <div className={styles.MainImageContainer}>
             <Image
-              src="/trkulja-web-2.png"
+              src="/trkulja-web-2.webp"
               alt="website-fotografije"
               fill
               quality={100}
@@ -33,7 +33,7 @@ const WebsiteImages = () => {
           <div className={styles.Flex}>
             <div>
               <Image
-                src="/trkulja-web-3.png"
+                src="/trkulja-web-3.webp"
                 alt="website-fotografije"
                 fill
                 quality={100}
@@ -41,7 +41,7 @@ const WebsiteImages = () => {
             </div>
             <div>
               <Image
-                src="/trkulja-web-4.png"
+                src="/trkulja-web-4.webp"
                 alt="website-fotografije"
                 fill
                 quality={100}
@@ -49,7 +49,7 @@ const WebsiteImages = () => {
             </div>
             <div>
               <Image
-                src="/trkulja-web-5.png"
+                src="/trkulja-web-5.webp"
                 alt="website-fotografije"
                 fill
                 quality={100}
@@ -58,7 +58,7 @@ const WebsiteImages = () => {
           </div>
           <div className={styles.MainImageContainer}>
             <Image
-              src="/trkulja-web-6.png"
+              src="/trkulja-web-6.webp"
               alt="website-fotografije"
               fill
               quality={100}

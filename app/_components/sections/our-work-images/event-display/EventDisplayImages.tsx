@@ -6,12 +6,12 @@ const EventDisplayImages = () => {
     <div className={`${styles.EventDisplayImages} panel`}>
       <div className="container">
         <div className={styles.MainImageContainer}>
-          <Image src="/ergomed-1.jpg" alt="dizajn-banera" fill quality={100} />
+          <Image src="/ergomed-1.webp" alt="dizajn-banera" fill quality={100} />
         </div>
         <div className={styles.Flex}>
           <div>
             <Image
-              src="/ergomed-2.jpg"
+              src="/ergomed-2.webp"
               alt="dizajn-banera"
               fill
               quality={100}
@@ -19,7 +19,7 @@ const EventDisplayImages = () => {
           </div>
           <div>
             <Image
-              src="/ergomed-3.jpg"
+              src="/ergomed-3.webp"
               alt="dizajn-banera"
               fill
               quality={100}

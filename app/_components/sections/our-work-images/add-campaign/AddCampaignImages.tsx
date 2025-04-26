@@ -8,7 +8,7 @@ const AddCampaignImages = () => {
       <div className="container">
         <div className={styles.MainImageContainer}>
           <Image
-            src="/arcelor-mital-main.jpg"
+            src="/arcelor-mital-main.webp"
             alt="reklame-dizajn"
             fill
             quality={100}
@@ -17,7 +17,7 @@ const AddCampaignImages = () => {
         <div className={styles.ImagesContainerGrid}>
           <div>
             <Image
-              src="/arcelor-mital-1.jpg"
+              src="/arcelor-mital-1.webp"
               alt="reklame-dizajn"
               fill
               quality={100}
@@ -25,7 +25,7 @@ const AddCampaignImages = () => {
           </div>
           <div>
             <Image
-              src="/arcelor-mital-2.jpg"
+              src="/arcelor-mital-2.webp"
               alt="reklame-dizajn"
               fill
               quality={100}
@@ -33,7 +33,7 @@ const AddCampaignImages = () => {
           </div>
           <div>
             <Image
-              src="/arcelor-mital-3.jpg"
+              src="/arcelor-mital-3.webp"
               alt="reklame-dizajn"
               fill
               quality={100}
@@ -41,7 +41,7 @@ const AddCampaignImages = () => {
           </div>
           <div>
             <Image
-              src="/arcelor-mital-4.jpg"
+              src="/arcelor-mital-4.webp"
               alt="reklame-dizajn"
               fill
               quality={100}

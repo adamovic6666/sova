@@ -8,7 +8,7 @@ const VideoProductionImages = () => {
       <div className="container">
         <div className={styles.MainImageContainer}>
           <Image
-            src="/arcelor-mittal-1.jpg"
+            src="/arcelor-mittal-2.webp"
             alt="video-production"
             fill={true}
             quality={100}
@@ -26,7 +26,7 @@ const VideoProductionImages = () => {
         </div>
         <div className={styles.BgImageFull}>
           <Image
-            src="/arcelor-mittal-2.jpg"
+            src="/arcelor-mittal-1.webp"
             alt="video-production"
             fill={true}
             quality={100}

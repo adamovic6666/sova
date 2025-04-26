@@ -8,7 +8,7 @@ export const IdentityImages = () => {
         <div className="container">
           <div className={styles.MainImageContainerTop}>
             <Image
-              src="/mpathy-1.jpg"
+              src="/mpathy-1.webp"
               alt="website-design"
               fill
               quality={100}
@@ -17,7 +17,7 @@ export const IdentityImages = () => {
           <div className={styles.Flex}>
             <div>
               <Image
-                src="/mpathy-2.jpg"
+                src="/mpathy-2.webp"
                 alt="website-design"
                 fill
                 quality={100}
@@ -25,7 +25,7 @@ export const IdentityImages = () => {
             </div>
             <div>
               <Image
-                src="/mpathy-3.jpg"
+                src="/mpathy-3.webp"
                 alt="website-design"
                 fill
                 quality={100}
@@ -33,7 +33,7 @@ export const IdentityImages = () => {
             </div>
             <div>
               <Image
-                src="/mpathy-4.jpg"
+                src="/mpathy-4.webp"
                 alt="website-design"
                 fill
                 quality={100}
@@ -46,7 +46,7 @@ export const IdentityImages = () => {
         <div className={styles.IdentityImagesBottomWrapper}>
           <div className={styles.DesktopImageContainer}>
             <Image
-              src="/mpathy-5.png"
+              src="/mpathy-5.webp"
               alt="website-design"
               fill
               quality={100}
@@ -56,7 +56,7 @@ export const IdentityImages = () => {
             <div className={styles.BelowDesktopImageContainer}>
               <div className={styles.MainImageContainer}>
                 <Image
-                  src="/mpathy-6.png"
+                  src="/mpathy-6.webp"
                   alt="website-design"
                   fill
                   quality={100}
@@ -65,7 +65,7 @@ export const IdentityImages = () => {
               <div className={styles.FlexBottom}>
                 <div>
                   <Image
-                    src="/mpathy-7.png"
+                    src="/mpathy-7.webp"
                     alt="website-design"
                     fill
                     quality={100}
@@ -73,7 +73,7 @@ export const IdentityImages = () => {
                 </div>
                 <div>
                   <Image
-                    src="/mpathy-8.png"
+                    src="/mpathy-8.webp"
                     alt="website-design"
                     fill
                     quality={100}
@@ -81,7 +81,7 @@ export const IdentityImages = () => {
                 </div>
                 <div>
                   <Image
-                    src="/mpathy-9.png"
+                    src="/mpathy-9.webp"
                     alt="website-design"
                     fill
                     quality={100}
@@ -90,7 +90,7 @@ export const IdentityImages = () => {
               </div>
               <div className={styles.MainImageContainer}>
                 <Image
-                  src="/mpathy-10.png"
+                  src="/mpathy-10.webp"
                   alt="website-design"
                   fill
                   quality={100}
@@ -98,7 +98,7 @@ export const IdentityImages = () => {
               </div>
               <div className={styles.MainImageContainer}>
                 <Image
-                  src="/mpathy-11.png"
+                  src="/mpathy-11.webp"
                   alt="website-design"
                   fill
                   quality={100}

@@ -8,7 +8,7 @@ const SpiritLabelImages = () => {
         <div className={`${styles.Flex} ${styles.Double}`}>
           <div>
             <Image
-              src="/ravnica-1.jpg"
+              src="/ravnica-1.webp"
               alt="dizajn-rakija-ambalaze"
               fill
               quality={100}
@@ -16,7 +16,7 @@ const SpiritLabelImages = () => {
           </div>
           <div>
             <Image
-              src="/ravnica-2.jpg"
+              src="/ravnica-2.webp"
               alt="dizajn-rakija-ambalaze"
               fill
               quality={100}
@@ -26,7 +26,7 @@ const SpiritLabelImages = () => {
         <div className={`${styles.Flex} ${styles.Triple}`}>
           <div>
             <Image
-              src="/ravnica-3.jpg"
+              src="/ravnica-3.webp"
               alt="madizajn-rakija-ambalazee"
               fill
               quality={100}
@@ -34,7 +34,7 @@ const SpiritLabelImages = () => {
           </div>
           <div>
             <Image
-              src="/ravnica-4.jpg"
+              src="/ravnica-4.webp"
               alt="dizajn-rakija-ambalaze"
               fill
               quality={100}
@@ -42,7 +42,7 @@ const SpiritLabelImages = () => {
           </div>
           <div>
             <Image
-              src="/ravnica-5.jpg"
+              src="/ravnica-5.webp"
               alt="dizajn-rakija-ambalaze"
               fill
               quality={100}

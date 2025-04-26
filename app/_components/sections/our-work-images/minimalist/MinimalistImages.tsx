@@ -6,12 +6,12 @@ const MinimalistImages = () => {
     <div className={`${styles.MinimalistImages} panel`}>
       <div className="container">
         <div className={styles.MainImageContainer}>
-          <Image src="/montechevo-1.jpg" alt="logo-dizajn" fill quality={100} />
+          <Image src="/motechevo-1.webp" alt="logo-dizajn" fill quality={100} />
         </div>
         <div className={styles.Flex}>
           <div>
             <Image
-              src="/montechevo-2.jpg"
+              src="/motechevo-2.webp"
               alt="logo-dizajn"
               fill
               quality={100}
@@ -19,7 +19,7 @@ const MinimalistImages = () => {
           </div>
           <div>
             <Image
-              src="/montechevo-3.jpg"
+              src="/motechevo-3.webp"
               alt="logo-dizajn"
               fill
               quality={100}
@@ -27,7 +27,7 @@ const MinimalistImages = () => {
           </div>
         </div>
         <div className={styles.MainImageContainer}>
-          <Image src="/montechevo-4.jpg" alt="logo-dizajn" fill quality={100} />
+          <Image src="/motechevo-4.webp" alt="logo-dizajn" fill quality={100} />
         </div>
       </div>
     </div>

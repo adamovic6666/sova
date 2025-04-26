@@ -7,7 +7,7 @@ const InfographicImages = () => {
       <div className="container">
         <div className={styles.InfographicImageContainer}>
           <Image
-            src="/infografik-1.jpg"
+            src="/infografika-1.webp"
             alt="infografik-dizajn"
             fill
             quality={100}
@@ -15,7 +15,7 @@ const InfographicImages = () => {
         </div>
         <div className={styles.InfographicImageContainer}>
           <Image
-            src="/infografik-2.jpg"
+            src="/infografika-2.webp"
             alt="infografik-dizajn"
             fill
             quality={100}
@@ -23,7 +23,7 @@ const InfographicImages = () => {
         </div>
         <div className={styles.InfographicImageContainer}>
           <Image
-            src="/infografik-3.jpg"
+            src="/infografika-3.webp"
             alt="infografik-dizajn"
             fill
             quality={100}
