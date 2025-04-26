@@ -7,7 +7,7 @@
   z-index: 1000;
   background-color: transparent;
   transition: all 0.3s ease-in-out;
-  transform: translateY(-100%);
+  transform: translateY(-120%);
 }
 .Header.visible {
   transform: translateY(0);

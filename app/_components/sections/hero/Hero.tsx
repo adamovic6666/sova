@@ -16,6 +16,8 @@ const Hero = () => {
 
   // State to track if we should show animation
   const [shouldAnimate, setShouldAnimate] = useState(false);
+  // State to track if we've determined animation state yet
+  const [isInitialized, setIsInitialized] = useState(false);
 
   // Check if animation should run (on mount only)
   useEffect(() => {
@@ -30,6 +32,8 @@ const Hero = () => {
         // On error, default to no animation for better experience
         setShouldAnimate(false);
       }
+      // Mark as initialized after setting shouldAnimate
+      setIsInitialized(true);
     }
   }, []);
 
@@ -94,6 +98,9 @@ const Hero = () => {
           "-=0.5"
         )
 
+        // Make title container visible before animation
+        .set(titleRef.current.parentElement, { visibility: "visible" })
+
         // Title text animation
         .fromTo(
           Array.from(titleRef.current.children),
@@ -111,66 +118,74 @@ const Hero = () => {
 
   return (
     <section ref={heroRef} className={`${styles.Hero} panel`} data-bg="dark">
-      {/* TWO DIFFERENT RENDERING PATHS */}
-
-      {/* ANIMATION PATH: For first time visitors */}
-      {shouldAnimate && (
-        <>
-          {/* Logo for animation (only shown during animation) */}
-          <div ref={logoRef} className={styles.LogoContainer}>
-            <LogoWhite logoColor="#fff" link={false} />
-          </div>
-
-          {/* Video with animation */}
-          <video
-            ref={videoRef}
-            className={styles.video}
-            autoPlay
-            muted
-            loop
-            preload="none"
-          >
-            <source src="/hero-video.mp4" type="video/mp4" />
-          </video>
-
-          {/* Title with animation */}
-          <div className="container">
-            <Title tag="h1" flex="column" color="white" ref={titleRef}>
-              <span>We</span>
-              <span>Make</span>
-              <span>Your</span>
-              <span>Brand</span>
-              <span>Fly</span>
-            </Title>
-          </div>
-        </>
+      {/* During initialization, show nothing or a placeholder */}
+      {!isInitialized && (
+        <div style={{ height: '100vh', background: '#000' }}></div>
       )}
-
-      {/* NO ANIMATION PATH: For returning visitors */}
-      {!shouldAnimate && (
+      
+      {/* Only render content after we've determined animation state */}
+      {isInitialized && (
         <>
-          {/* Video immediately visible */}
-          <video
-            className={styles.video}
-            autoPlay
-            muted
-            loop
-            preload="none"
-            style={{ opacity: 1, scale: 1 }}
-          >
-            <source src="/hero-video.mp4" type="video/mp4" />
-          </video>
+          {/* ANIMATION PATH: For first time visitors */}
+          {shouldAnimate && (
+            <>
+              {/* Logo for animation (only shown during animation) */}
+              <div ref={logoRef} className={styles.LogoContainer}>
+                <LogoWhite logoColor="#fff" link={false} />
+              </div>
 
-          {/* Title immediately visible */}
-          <div className="container">
-            <Title tag="h1" flex="column" color="white">
-              <span style={{ opacity: 1 }}>We</span>
-              <span style={{ opacity: 1 }}>Make</span>
-              <span style={{ opacity: 1 }}>Your</span>
-              <span style={{ opacity: 1 }}>Brand</span>
-              <span style={{ opacity: 1 }}>Fly</span>
-            </Title>
-          </div>
+              {/* Video with animation */}
+              <video
+                ref={videoRef}
+                className={styles.video}
+                autoPlay
+                muted
+                loop
+                preload="none"
+              >
+                <source src="/hero-video.mp4" type="video/mp4" />
+              </video>
+
+              {/* Title with animation */}
+              <div className="container" style={{ visibility: "hidden" }}>
+                <Title tag="h1" flex="column" color="white" ref={titleRef}>
+                  <span>We</span>
+                  <span>Make</span>
+                  <span>Your</span>
+                  <span>Brand</span>
+                  <span>Fly</span>
+                </Title>
+              </div>
+            </>
+          )}
+
+          {/* NO ANIMATION PATH: For returning visitors */}
+          {!shouldAnimate && (
+            <>
+              {/* Video immediately visible */}
+              <video
+                className={styles.video}
+                autoPlay
+                muted
+                loop
+                preload="none"
+                style={{ opacity: 1, scale: 1 }}
+              >
+                <source src="/hero-video.mp4" type="video/mp4" />
+              </video>
+
+              {/* Title immediately visible */}
+              <div className="container">
+                <Title tag="h1" flex="column" color="white">
+                  <span style={{ opacity: 1 }}>We</span>
+                  <span style={{ opacity: 1 }}>Make</span>
+                  <span style={{ opacity: 1 }}>Your</span>
+                  <span style={{ opacity: 1 }}>Brand</span>
+                  <span style={{ opacity: 1 }}>Fly</span>
+                </Title>
+              </div>
+            </>
+          )}
         </>
       )}
     </section>
