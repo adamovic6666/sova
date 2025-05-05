@@ -1,4 +1,3 @@
-import Title from "../../title/Title";
 import Button from "../../ui/button/Button";
 import styles from "./NotFound.module.css";
 
@@ -6,10 +5,10 @@ const NotFound = () => {
   return (
     <section className={styles.NotFound} data-bg="dark">
       <div className="container">
-        <Title tag="h1" flex="column" color="white">
+        <h1>
           <span>Who</span>
           <span>ops!</span>
-        </Title>
+        </h1>
         <p>404-page not found! looks like you flew a little off course...</p>
         <Button href="/" type="link">
           Fly back home
