@@ -56,8 +56,39 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Sova Creative Studio",
+    url: "https://www.sova.ooo",
+    logo: "https://www.sova.ooo/og.jpg",
+    description:
+      "Sova Creative Studio is a full-service creative team based in Serbia, delivering cost-effective and high-quality visual communication solutions for global brands and local startups.",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "RS",
+    },
+    sameAs: [
+      "https://www.linkedin.com/company/sova-creative-studio",
+      "https://www.instagram.com/sova.ooo",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "Customer Service",
+      email: "hello@sova.ooo",
+    },
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+      </head>
       <body className={`${openSans.variable} ${myFont.variable}`}>
         <GoogleAnalytics />
         <Header />
