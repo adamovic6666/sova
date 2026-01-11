@@ -103,7 +103,7 @@
 
 @media (min-width: 1024px) {
   .WineImages > div {
-    transform: translateY(-8rem);
+    transform: translateY(-5rem);
   }
 
   .MainImageContainer {

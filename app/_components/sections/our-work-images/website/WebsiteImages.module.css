@@ -12,7 +12,7 @@
   margin: 0 auto;
 }
 .MainImage {
-  aspect-ratio: 192 / 85;
+  aspect-ratio: 2.4 / 1;
 }
 
 .MainImageMobile {
@@ -42,7 +42,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10;
   margin-bottom: 1.6rem;
 }
 

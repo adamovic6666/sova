@@ -6,13 +6,13 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "lint": "next lint",
-    "start": "NODE_ENV=production node server.js"
+    "start": "next start"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^3.10.0",
     "gsap": "^3.12.7",
-    "next": "15.1.11",
+    "next": "15.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
@@ -24,7 +24,7 @@
     "@types/node": "^20",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.1.11",
+    "eslint-config-next": "15.3.8",
     "typescript": "^5"
   }
 }
