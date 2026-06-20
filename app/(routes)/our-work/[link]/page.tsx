@@ -2,6 +2,14 @@ import SingleWork from "@/app/_components/sections/our-work/single-work/SingleWo
 import { OurWorkData } from "@/app/_data";
 import type { Metadata } from "next";
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return OurWorkData.filter((item) => item.link).map((item) => ({
+    link: item.link,
+  }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -23,10 +31,9 @@ const SingleWorkPage = async ({
 }) => {
   const { link } = await params;
   const data = await OurWorkData.find((item) => item.link === link);
-  const otherProjects = await OurWorkData.sort(() => 0.5 - Math.random()).slice(
-    0,
-    6
-  );
+  const otherProjects = await OurWorkData.filter(
+    (item) => item.link !== link
+  ).slice(0, 6);
   const { pageTitle, sectionTitle, sectionText, project, title, image } =
     data || {};
 
