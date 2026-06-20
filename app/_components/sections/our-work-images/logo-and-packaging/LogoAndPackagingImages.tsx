@@ -15,7 +15,14 @@ const LogoAndPackagingImages = () => {
       </div>
       <div className="panel">
         <div className={styles.FullWidthBackground}>
-          <div className={styles.ImageOne} />
+          <div className={styles.ImageOne}>
+            <Image
+              src="/vabo-full.webp"
+              alt="full-width-background"
+              fill
+              quality={100}
+            />
+          </div>
         </div>
       </div>
     </div>
