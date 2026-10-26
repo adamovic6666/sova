@@ -8,9 +8,24 @@ import LogoWhite from "../../svg/LogoWhite";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const playInlineVideo = (video: HTMLVideoElement) => {
+  video.muted = true;
+  video.defaultMuted = true;
+  video.playsInline = true;
+  video.setAttribute("playsinline", "");
+  video.setAttribute("webkit-playsinline", "");
+
+  const playAttempt = video.play();
+  if (playAttempt !== undefined) {
+    playAttempt.catch(() => {
+      // iOS Low Power Mode and delayed mounts can reject autoplay until a gesture.
+    });
+  }
+};
+
 const Hero = () => {
   const heroRef = useRef(null);
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const logoRef = useRef(null);
   const titleRef = useRef<HTMLDivElement>(null);
 
@@ -116,6 +131,35 @@ const Hero = () => {
     };
   }, [shouldAnimate]);
 
+  // iOS Safari ignores autoPlay unless the video is muted, plays inline, and
+  // play() is invoked. Chrome's device toolbar does not emulate this.
+  useEffect(() => {
+    if (!isInitialized) return;
+
+    const video = videoRef.current;
+    if (!video) return;
+
+    playInlineVideo(video);
+
+    const tryPlay = () => playInlineVideo(video);
+    const onFirstGesture = () => tryPlay();
+
+    video.addEventListener("loadeddata", tryPlay);
+    video.addEventListener("canplay", tryPlay);
+    document.addEventListener("touchstart", onFirstGesture, {
+      once: true,
+      passive: true,
+    });
+    document.addEventListener("click", onFirstGesture, { once: true });
+
+    return () => {
+      video.removeEventListener("loadeddata", tryPlay);
+      video.removeEventListener("canplay", tryPlay);
+      document.removeEventListener("touchstart", onFirstGesture);
+      document.removeEventListener("click", onFirstGesture);
+    };
+  }, [isInitialized, shouldAnimate]);
+
   return (
     <section ref={heroRef} className={`${styles.Hero} panel`} data-bg="dark">
       {/* During initialization, show nothing or a placeholder */}
@@ -141,7 +185,9 @@ const Hero = () => {
                 autoPlay
                 muted
                 loop
-                preload="none"
+                playsInline
+                preload="auto"
+                webkit-playsinline=""
               >
                 <source src="/hero-video.mp4" type="video/mp4" />
               </video>
@@ -164,11 +210,14 @@ const Hero = () => {
             <>
               {/* Video immediately visible */}
               <video
+                ref={videoRef}
                 className={styles.video}
                 autoPlay
                 muted
                 loop
-                preload="none"
+                playsInline
+                preload="auto"
+                webkit-playsinline=""
                 style={{ opacity: 1, scale: 1 }}
               >
                 <source src="/hero-video.mp4" type="video/mp4" />
